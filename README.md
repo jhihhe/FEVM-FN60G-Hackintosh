@@ -36,7 +36,7 @@
 ![主题](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
 - [x] 1. CPU变频：工作正常。 
 ![CPU](https://pic.imgdb.cn/item/65c0b97e9f345e8d033304b3.png)
-![CPU1](https://pic.imgdb.cn/item/65c0b97e9f345e8d0333053c.png)
+![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
 - [x] 2. 显卡：工作正常，开启HIDPI，开启H.264&HEVC硬件解码加速，RX6600M：工作正常，增加独显AAPL,slot-name参数，机型设置imacpro1,1 比macpro7,1增加30%性能
 ![显卡](https://pic.imgdb.cn/item/65c0bddf9f345e8d033f3cee.png)
 ![硬件解码加速：H.264&HEVC解码](https://pic.imgdb.cn/item/65c0be559f345e8d03407fce.png)
