@@ -49,7 +49,7 @@
 - [x] 4. USB: working fine
 ![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
 - [x] 5. Wired network card: working fine
-![Wired network card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1 .png)
+![Wired network card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
 - [x] 6. Wireless network card: working fine
 
 ![Wi-Fi](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%97%A0%E7%BA%BF%E7%BD%91.png)
