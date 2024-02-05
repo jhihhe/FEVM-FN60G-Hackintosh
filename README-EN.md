@@ -44,7 +44,7 @@
 - [x] 2. Graphics card: working fine, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent graphics AAPL, slot-name parameters
 ![Graphics card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%98%BE%E5%8D%A1.png)
 ![Graphics card 1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/GPU%E6%B5%8B%E8%AF%951.png)
-![Hardware decoding acceleration: H.264&HEVC decoding](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
+![Hardware decoding](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
 - [x] 3. 3.5mm sound: working fine
 - [x] 4. USB: working fine
 ![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
