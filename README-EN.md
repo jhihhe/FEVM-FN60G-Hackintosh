@@ -12,7 +12,16 @@
 - [x] 3. Add hfsplus.efi to support USB disk installation
 
 ## Configuration
-1. Model: FEVM-FN60G (BIOS Version FN60G-BIOS (B11HF170) Please click here [Download BIOS](https://www.lanzouh.com/iHkix1mxk6yh))
+1. Model: FEVM-FN60G (BIOS Version FN60G-BIOS (B11HF170)
+   
+    1. Fix Windows compatibility of Broadcom network card.
+   
+    2. Fixed compatibility issues with some 14th generation processors.
+   
+    3. Fixed some memory module compatibility issues and supports 5600 frequency memory
+   
+    Please click here [Download BIOS](https://www.lanzouh.com/iHkix1mxk6yh) )
+   
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
 1. Graphics card: AMD Radeon RX 6600M
 1. Onboard network card: Realtek® RTL8125B Gigabit LAN Controller
