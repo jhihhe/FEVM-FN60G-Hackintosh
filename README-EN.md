@@ -51,5 +51,6 @@
 
 # Acknowledgments
 # The configuration files of daliansky boss and Xmingbai boss are used. If you need other versions, please click the boss link to view
-https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
-https://github.com/daliansky/FEVM-FN60G-Hackintosh
+# https://github.com/daliansky/FEVM-FN60G-Hackintosh
+
+# https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
