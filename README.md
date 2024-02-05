@@ -6,9 +6,6 @@
 
 # 请自行生成Board Serial Number、序列号、SmUUID，并相应的修改SysPrameter系统参数中的“自定义UUID”，和RtVariables变量设置中的MLB、ROM
 
-![系统信息](https://pic.imgdb.cn/item/65c0b9779f345e8d0332f1c2.png)
-![系统信息2](https://pic.imgdb.cn/item/65c0b9769f345e8d0332ef4b.png)
-
 ## 更新日志：
 - [x] 1. 更新 oc 版本到0.9.7正式版
 - [x] 2. 更新所有kext内核拓展驱动到最新版本
