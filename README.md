@@ -59,7 +59,7 @@
 1. 该config启动盘策略 ScanPolicy 值设置为0。可引导Windows或Other OS（Linux、Unix）如需指定搜索分区类型，可参考OC配置手册。
 
 # 鸣谢 
-# 使用了daliansky大佬和Xmingbai大佬的配置文件,如果需其他版本可点击大佬链接查看
+# 参考了daliansky大佬和Xmingbai大佬的配置文件,如果需其他版本可点击大佬链接查看
 # https://github.com/daliansky/FEVM-FN60G-Hackintosh
 
 # https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
