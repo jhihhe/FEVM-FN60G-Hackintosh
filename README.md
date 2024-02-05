@@ -51,5 +51,5 @@
 
 # 鸣谢 
 # 使用了daliansky大佬和Xmingbai大佬的配置文件,如果需其他版本可点击大佬链接查看
-https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
-https://github.com/daliansky/FEVM-FN60G-Hackintosh
+1.https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
+1.https://github.com/daliansky/FEVM-FN60G-Hackintosh
