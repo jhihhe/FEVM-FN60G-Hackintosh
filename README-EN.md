@@ -25,23 +25,23 @@
 # **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.4**
 1. OpenCore version: 0.9.7
 ![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
-- [x] 1. CPU frequency conversion: working normally.
+- [x] 1. CPU frequency conversion:working fine
 ![CPU](https://pic.imgdb.cn/item/65c0b97e9f345e8d033304b3.png)
 ![CPU1](https://pic.imgdb.cn/item/65c0b97e9f345e8d0333053c.png)
-- [x] 2. Graphics card: works normally, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent display AAPL, slot-name parameters, model setting imacpro1,1 is 30% higher than macpro7,1 performance
+- [x] 2. Graphics card: working fine, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent display AAPL, slot-name parameters, model setting imacpro1,1 is 30% higher than macpro7,1 performance
 ![Graphics card](https://pic.imgdb.cn/item/65c0bddf9f345e8d033f3cee.png)
 ![Hardware decoding acceleration: H.264&HEVC decoding](https://pic.imgdb.cn/item/65c0be559f345e8d03407fce.png)
 - [x] 3. 3.5mm sound: working fine
 - [x] 4. USB: working fine
 ![USB](https://pic.imgdb.cn/item/65c0bee79f345e8d03421fdf.png)
-- [x] 5. Wired network card: working normally, using RealtekRTL8111.kext
+- [x] 5. Wired network card: working fine
 ![Cable network card](https://pic.imgdb.cn/item/65c0b9789f345e8d0332f49a.png)
-- [x] 6. Wireless network card: working normally
+- [x] 6. Wireless network card: working fine
 ![Wi-Fi](https://pic.imgdb.cn/item/65c0b97d9f345e8d033301c5.png)
 - [x] 7. Sleep wake-up: works fine
-- [x] 8. Turn off and on: working normally
-- [x] 9. iCloud & App Store & iMessage & FaceTime: Normal
-- [x] 10. AirDrop & HandOff & Continuity: Normal.
+- [x] 8. Turn off and on: working fine
+- [x] 9. iCloud & App Store & iMessage & FaceTime: working fine
+- [x] 10. AirDrop & HandOff & Continuity: working fine
 ![Bluetooth](https://pic.imgdb.cn/item/65c0b97d9f345e8d0333030a.png)
 
 ### Tips:
