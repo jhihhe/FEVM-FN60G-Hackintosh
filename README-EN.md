@@ -1,6 +1,6 @@
 # FEVM-FN60G-Hackintosh-EFI_OpenCore-0.9.7 macOS
 
-# [Chinese](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md)｜[English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/ blob/main/README-EN.md)
+# [Chinese](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md)｜[English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md)
 
 # Download click [releases](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
 
