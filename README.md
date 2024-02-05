@@ -50,7 +50,8 @@
 ![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
 - [x] 5. 有线网卡：工作正常
 ![有线网卡](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
-- [x] 6. 无线网卡：工作正常 
+- [x] 6. 无线网卡：工作正常
+
 ![Wi-Fi](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%97%A0%E7%BA%BF%E7%BD%91.png)
 - [x] 7. 睡眠唤醒：工作正常 
 - [x] 8. 关机开机：工作正常
