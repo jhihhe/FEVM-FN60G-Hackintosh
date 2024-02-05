@@ -15,9 +15,13 @@
 1. 机型: FEVM-FN60G（BIOS Version FN60G-BIOS（B11HF170）
    
    1.修复博通网卡Windows兼容性。
+   
    2.修正14代部分处理器兼容性问题。
+   
    3.修正部分内存条兼容性问题,支持5600频率内存
+   
    请点击这里[下载BIOS](https://www.lanzouh.com/iHkix1mxk6yh) ）
+   
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
 1. 显卡: AMD Radeon RX 6600M
 1. 板载网卡: Realtek® RTL8125B Gigabit LAN Controller
