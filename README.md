@@ -11,6 +11,8 @@
 - [x] 2. 更新所有kext内核拓展驱动到最新版本
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 
+![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
+
 ## 配置
 1. 机型: FEVM-FN60G（BIOS Version FN60G-BIOS（B11HF170）
    
@@ -21,8 +23,6 @@
    3.修正部分内存条兼容性问题,支持5600频率内存
    
    请点击这里[下载BIOS](https://www.lanzouh.com/iHkix1mxk6yh) ）
-
-![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
 1. 显卡: AMD Radeon RX 6600M
@@ -39,8 +39,11 @@
 - [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
 ![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
+![CPU2](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B.png)
+![CPU3](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B1.png)
 - [x] 2. 显卡：工作正常，开启HIDPI，开启H.264&HEVC硬件解码加速，RX6600M：工作正常，增加独显AAPL,slot-name参数
 ![显卡](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%98%BE%E5%8D%A1.png)
+![显卡1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/GPU%E6%B5%8B%E8%AF%951.png)
 ![硬件解码加速：H.264&HEVC解码](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
 - [x] 3. 3.5mm声音：工作正常
 - [x] 4. USB：工作正常
