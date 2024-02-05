@@ -17,7 +17,7 @@
 1. Graphics card: AMD Radeon RX 6600M
 1. Onboard network card: Realtek® RTL8125B Gigabit LAN Controller
 1. WiFi/Bluetooth: BCM94352Z (BT4.2)
-1. Solid state drive: Media name: KIOXIA-EXCERIA G2 SSD RD20-2TB (TRIM enabled)
+1. Solid state drive: KIOXIA-EXCERIA G2 SSD RD20-2TB (TRIM enabled)
 
 ### BIOS settings
 1. Turn off secure boot &cfg lock
