@@ -35,7 +35,7 @@
 
 # **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.4**
 1. OpenCore版本：0.9.7
-![主题](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
+![主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)
 - [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
 ![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
