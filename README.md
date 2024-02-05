@@ -34,7 +34,7 @@
 - [x] 3. 3.5mm声音：工作正常
 - [x] 4. USB：工作正常
 ![USB](https://pic.imgdb.cn/item/65c0bee79f345e8d03421fdf.png)
-- [x] 5. 有线网卡：工作正常，使用了RealtekRTL8111.kext
+- [x] 5. 有线网卡：工作正常
 ![有线网卡](https://pic.imgdb.cn/item/65c0b9789f345e8d0332f49a.png)
 - [x] 6. 无线网卡：工作正常 
 ![Wi-Fi](https://pic.imgdb.cn/item/65c0b97d9f345e8d033301c5.png)
