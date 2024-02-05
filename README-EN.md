@@ -36,27 +36,27 @@
 # **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.4**
 1. OpenCore version: 0.9.7
 ![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
-- [x] 1. CPU frequency conversion: working normally, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
+- [x] 1. CPU frequency conversion: working fine, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
 ![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
 ![CPU2](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B.png)
 ![CPU3](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B1.png)
-- [x] 2. Graphics card: works normally, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent graphics AAPL, slot-name parameters
+- [x] 2. Graphics card: working fine, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent graphics AAPL, slot-name parameters
 ![Graphics card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%98%BE%E5%8D%A1.png)
 ![Graphics card 1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/GPU%E6%B5%8B%E8%AF%951.png)
 ![Hardware decoding acceleration: H.264&HEVC decoding](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81 .png)
 - [x] 3. 3.5mm sound: working fine
 - [x] 4. USB: working fine
 ![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
-- [x] 5. Wired network card: working normally
+- [x] 5. Wired network card: working fine
 ![Wired network card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1 .png)
-- [x] 6. Wireless network card: working normally
+- [x] 6. Wireless network card: working fine
 
 ![Wi-Fi](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%97%A0%E7%BA%BF%E7%BD%91.png)
 - [x] 7. Sleep wake-up: works fine
-- [x] 8. Turn off and on: working normally
-- [x] 9. iCloud & App Store & iMessage & FaceTime: Normal
-- [x] 10. AirDrop & HandOff & Continuity: Normal.
+- [x] 8. Turn off and on: working fine
+- [x] 9. iCloud & App Store & iMessage & FaceTime: working fine
+- [x] 10. AirDrop & HandOff & Continuity: working fine
 ![Bluetooth](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E8%93%9D%E7%89%99.png)
 
 ### Tips:
