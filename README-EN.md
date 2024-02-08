@@ -34,7 +34,7 @@
 1. Turn off secure boot &cfg lock
 
 # **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.4**
-1. OpenCore version: 0.9.7
+1. OpenCore version: 0.9.8
 ![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
 - [x] 1. CPU frequency conversion: working fine, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
