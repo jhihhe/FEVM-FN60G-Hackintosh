@@ -1,4 +1,4 @@
-# FEVM-FN60G-Hackintosh-EFI_OpenCore-0.9.7 macOS
+# FEVM-FN60G-Hackintosh-EFI_OpenCore-macOS
 
 # [Chinese](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md)｜[English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md)
 
@@ -7,7 +7,7 @@
 # Please generate the Board Serial Number, serial number, and SmUUID by yourself, and modify the "custom UUID" in the SysPrameter system parameters accordingly, and the MLB and ROM in the RtVariables variable settings.
 
 ## Update log:
-- [x] 1. Update oc version to official version 0.9.7
+- [x] 1. Update oc version to official version 0.9.8
 - [x] 2. Update all kext kernel extension drivers to the latest version
 - [x] 3. Add hfsplus.efi to support USB disk installation
 
