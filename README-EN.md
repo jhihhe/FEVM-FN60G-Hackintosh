@@ -7,7 +7,7 @@
 # Please generate the Board Serial Number, serial number, and SmUUID by yourself, and modify the "custom UUID" in the SysPrameter system parameters accordingly, and the MLB and ROM in the RtVariables variable settings.
 
 ## Update log:
-- [x] 1. Update oc version to official version 0.9.8
+- [x] 1. Update oc version to official version 0.9.9
 - [x] 2. Update all kext kernel extension drivers to the latest version
 - [x] 3. Add hfsplus.efi to support USB disk installation
 
@@ -22,7 +22,7 @@
    
     3. Fixed some memory module compatibility issues and supports 5600 frequency memory
    
-    Please click here [Download BIOS](https://www.lanzouh.com/iHkix1mxk6yh) )
+    Please click here [Download BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
 
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
 1. Graphics card: AMD Radeon RX 6600M
@@ -33,8 +33,8 @@
 ### BIOS settings
 1. Turn off secure boot &cfg lock
 
-# **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.4**
-1. OpenCore version: 0.9.8
+# **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.5**
+1. OpenCore version: 0.9.9
 ![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
 - [x] 1. CPU frequency conversion: working fine, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
