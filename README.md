@@ -22,7 +22,7 @@
    
    3.修正部分内存条兼容性问题,支持5600频率内存
    
-   请点击这里[下载BIOS](https://www.lanzouh.com/iHkix1mxk6yh) ）
+   请点击这里[下载BIOS]([https://www.lanzouh.com/iHkix1mxk6yh](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)) ）
 
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
 1. 显卡: AMD Radeon RX 6600M
