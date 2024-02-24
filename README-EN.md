@@ -11,7 +11,7 @@
 - [x] 2. Update all kext kernel extension drivers to the latest version
 - [x] 3. Add hfsplus.efi to support USB disk installation
 
-![System Report](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A .png)
+![System Report](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 ## Configuration
 1. Model: FEVM-FN60G (BIOS Version FN60G-BIOS (B11HF170)
