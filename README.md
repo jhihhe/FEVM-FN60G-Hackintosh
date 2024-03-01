@@ -10,6 +10,9 @@
 - [x] 1. 更新 oc 版本到0.9.9MOD版
 - [x] 2. 更新所有kext内核拓展驱动到最新版本
 - [x] 3. 添加hfsplus.efi以支持u盘安装
+- [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
+- [x] 5. USB驱动更换为daliansky黑果小兵最新定制版本
+
 
 ![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
