@@ -7,9 +7,11 @@
 # Please generate the Board Serial Number, serial number, and SmUUID by yourself, and modify the "custom UUID" in the SysPrameter system parameters accordingly, and the MLB and ROM in the RtVariables variable settings.
 
 ## Update log:
-- [x] 1. Update oc version to official version 0.9.9
+- [x] 1. Update oc version to version 0.9.9MOD
 - [x] 2. Update all kext kernel extension drivers to the latest version
 - [x] 3. Add hfsplus.efi to support USB disk installation
+- [x] 4. The graphics card is customized to AMD Radeon Pro W6600 to enhance performance
+- [x] 5. The USB driver is replaced with the latest customized version of daliansky.
 
 ![System Report](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
