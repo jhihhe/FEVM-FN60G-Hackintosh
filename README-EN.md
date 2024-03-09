@@ -35,7 +35,7 @@
 ### BIOS settings
 1. Turn off secure boot &cfg lock
 
-# **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.5**
+# **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.5/macOS Sonoma 14.4**
 1. OpenCore version: 0.9.9
 ![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
 - [x] 1. CPU frequency conversion: working fine, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
