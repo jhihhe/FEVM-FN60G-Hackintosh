@@ -32,7 +32,9 @@
 1. 显卡: AMD Radeon RX 6600M
 1. 板载网卡: Realtek® RTL8125B Gigabit LAN Controller
 1. WiFi/蓝牙: BCM94352Z（BT4.2）
-1. 固态硬盘: KIOXIA-EXCERIA G2 SSD RD20-2TB（开启TRIM）
+1. 固态硬盘: KIOXIA-EXCERIA PRO SSD SE10-2TB（开启TRIM）
+                      KIOXIA-EXCERIA G2 SSD RD20-2TB
+                      
 
 ### BIOS设置
 1. 关闭secure boot &cfg lock
