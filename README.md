@@ -18,7 +18,7 @@
 ![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 ## 配置
-1. 机型: FEVM-FN60G（BIOS Version FN60G-BIOS（B11HF170）
+1. 机型: FEVM-FN60G（BIOS Version FN60G-BIOS（B11HF210）
    
    1.修复博通网卡Windows兼容性。
    
