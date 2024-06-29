@@ -12,7 +12,7 @@
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 - [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
 - [x] 5. USB驱动更换为daliansky黑果小兵最新定制版本
-- [x] 6. 更新IOSkywalkFamily.kext到1.1.0版本,以支持macOS Sonoma 14.4
+- [x] 6. 更新IOSkywalkFamily.kext到1.1.0版本,以支持macOS Sonoma 14.5
 
 
 ![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
@@ -26,6 +26,10 @@
    
    3.修正部分内存条兼容性问题,支持5600频率内存
    
+   4.为兼容更多类型的处理器提高稳定性，修正AC/DC loadline数值为110/110
+   
+   5.内存频率修改为遵循intel处理器支持的频率和规范（默认不做内存超频），加入OverClock超频选项代替之前默认超频设置（单面海力士颗粒内存可选）
+   
    请点击这里[下载BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
 
 1. CPU:13th Generation Intel® Core™ i5-13600T Processors
@@ -38,7 +42,7 @@
 ### BIOS设置
 1. 关闭secure boot &cfg lock
 
-# **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey 12.7.3/macOS Ventura 13.6.5/macOS Sonoma 14.4**
+# **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS Sonoma **
 1. OpenCore版本：1.0.0
 ![主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)
 - [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
