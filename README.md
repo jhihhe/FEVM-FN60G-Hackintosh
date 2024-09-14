@@ -7,7 +7,7 @@
 # 请自行生成Board Serial Number、序列号、SmUUID，并相应的修改SysPrameter系统参数中的“自定义UUID”，和RtVariables变量设置中的MLB、ROM
 
 ## 更新日志：
-- [x] 1. 更新 oc 版本到1.0.0 MOD版
+- [x] 1. 更新 oc 版本到1.0.2 MOD版
 - [x] 2. 更新所有kext内核拓展驱动到最新版本
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 - [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
