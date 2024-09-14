@@ -12,7 +12,7 @@
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 - [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
 - [x] 5. USB驱动更换为daliansky黑果小兵最新定制版本
-- [x] 6. 更新IOSkywalkFamily.kext到1.1.0版本,以支持macOS Sonoma 14.5
+- [x] 6. 更新IOSkywalkFamily.kext到1.1.0版本,以支持macOS Sonoma 14.6.1
 
 
 ![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
