@@ -12,7 +12,7 @@
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 - [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
 - [x] 5. USB驱动更换为daliansky黑果小兵最新定制版本
-- [x] 6. 更新IOSkywalkFamily.kext到1.1.0版本,以支持macOS Sonoma 14.6.1
+- [x] 6. 更新IOSkywalkFamily.kext到1.2.0版本,以支持macOS Sonoma 14.7及Sequoia 15.1
 
 
 ![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
@@ -42,7 +42,7 @@
 ### BIOS设置
 1. 关闭secure boot &cfg lock
 
-# **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS Sonoma **
+# **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS Sonoma/macOS Sequoia**
 1. OpenCore版本：1.0.2
 ![主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)
 - [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
