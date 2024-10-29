@@ -7,7 +7,7 @@
 # 请自行生成Board Serial Number、序列号、SmUUID，并相应的修改SysPrameter系统参数中的“自定义UUID”，和RtVariables变量设置中的MLB、ROM
 
 ## 更新日志：
-- [x] 1. 更新 oc 版本到1.0.2 MOD版
+- [x] 1. 更新 oc 版本到1.0.3 MOD版
 - [x] 2. 更新所有kext内核拓展驱动到最新版本
 - [x] 3. 添加hfsplus.efi以支持u盘安装
 - [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
@@ -43,7 +43,7 @@
 1. 关闭secure boot &cfg lock
 
 # **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS Sonoma/macOS Sequoia**
-1. OpenCore版本：1.0.2
+1. OpenCore版本：1.0.3
 ![主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)
 - [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
 ![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
