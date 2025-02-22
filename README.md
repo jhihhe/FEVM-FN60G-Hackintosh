@@ -30,7 +30,7 @@
 ## 📜 更新日志
 **核心组件升级**  
 ![OpenCore](https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square) 
-![Kexts](https://img.shields.io/badge/Kexts-2023.11_Latest-4BC51D?style=flat-square)
+![Kexts](https://img.shields.io/badge/Kexts-2025.02_Latest-4BC51D?style=flat-square)
 
 ---
 ## 📌 项目概述  
