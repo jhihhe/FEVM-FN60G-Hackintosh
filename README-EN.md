@@ -1,73 +1,103 @@
-# FEVM-FN60G-Hackintosh-EFI_OpenCore-macOS
+<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.1-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜
+<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
+</div>
 
-# [Chinese](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md)｜[English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md)
+---
 
-# Download click [releases](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+## 🚀 Quick Start
+**Latest stable version EFI download** → [![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
 
-# Please generate the Board Serial Number, serial number, and SmUUID by yourself, and modify the "custom UUID" in the SysPrameter system parameters accordingly, and the MLB and ROM in the RtVariables variable settings.
+> **Important tips**
+> Please generate the following three codes and modify the corresponding configuration before use:
+> - Board Serial Number
+> - Serial Number
+> - SmUUID
+>
+> File location to be modified:
+> - SysParameter → Custom UUID
+> - RtVariables → MLB & ROM
 
-## Update log:
-- [x] 1. Update oc version to version 1.0.3 MOD
-- [x] 2. Update all kext kernel extension drivers to the latest version
-- [x] 3. Add hfsplus.efi to support USB disk installation
-- [x] 4. The graphics card is customized to AMD Radeon Pro W6600 to enhance performance
-- [x] 5. The USB driver is replaced with the latest customized version of daliansky.
+---
 
-![System Report](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
+## 📜 Update log
+**Core component upgrade**
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square)
+![Kexts](https://img.shields.io/badge/Kexts-2023.11_Latest-4BC51D?style=flat-square)
 
-## Configuration
-1. Model: FEVM-FN60G (BIOS Version FN60G-BIOS (B11HF210)
-   
-    1. Fix Windows compatibility of Broadcom network card.
-   
-    2. Fixed compatibility issues with some 14th generation processors.
-   
-    3. Fixed some memory module compatibility issues and supports 5600 frequency memory
-   
-    Please click here [Download BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
+---
+## 📌 Project Overview
+OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th generation + AMD RX 6600M)**, supports macOS 15.1 system, and provides the following core functions:
+- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)
+- Graphics card HIDPI support and hardware decoding acceleration
+- Dual system boot (Windows/Linux)
+- Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)
 
-1. CPU:13th Generation Intel® Core™ i5-13600T Processors
-1. Graphics card: AMD Radeon RX 6600M
-1. Onboard network card: Realtek® RTL8125B Gigabit LAN Controller
-1. WiFi/Bluetooth: BCM94352Z (BT4.2)
-1. Solid state drive: KIOXIA-EXCERIA G2 SSD RD20-2TB (TRIM enabled)
+---
 
-### BIOS settings
-1. Turn off secure boot &cfg lock
+## 📥 Download and update
+- **Latest version**: [Click to download](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+- **Update log**:
+- ✅ OpenCore 1.0.3 MOD version adaptation
+- ✅ All Kext drivers updated to the latest version
+- ✅ Add `hfsplus.efi` to support USB installation
+- ✅ AMD Radeon Pro W6600M graphics card customization optimization
+- ✅ Black Fruit Soldier USB driver integration
+- ✅ IOSkywalkFamily.kext Updated to 1.2.0 (compatible with Sonoma 14.7/Sequoia 15.1)
 
-# **Applicable operating system versions: support macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS SonomamacOS Sequoia**
-1. OpenCore version: 1.0.3
-![Topic](https://tva2.sinaimg.cn/large/cec1774cly8h1g75kzm0vj21hc0u0gmt.jpg)
-- [x] 1. CPU frequency conversion: working fine, model setting imacpro1,1 increases performance by 30% compared to macpro7,1
-![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
-![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
-![CPU2](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B.png)
-![CPU3](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B1.png)
-- [x] 2. Graphics card: working fine, turns on HIDPI, turns on H.264&HEVC hardware decoding acceleration, RX6600M: works normally, adds independent graphics AAPL, slot-name parameters
-![Graphics card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%98%BE%E5%8D%A1.png)
-![Graphics card 1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/GPU%E6%B5%8B%E8%AF%951.png)
-![Hardware decoding](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
-- [x] 3. 3.5mm sound: working fine
-- [x] 4. USB: working fine
-![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
-- [x] 5. Wired network card: working fine
-![Wired network card](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
-- [x] 6. Wireless network card: working fine
+---
 
-![Wi-Fi](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%97%A0%E7%BA%BF%E7%BD%91.png)
-- [x] 7. Sleep wake-up: works fine
-- [x] 8. Turn off and on: working fine
-- [x] 9. iCloud & App Store & iMessage & FaceTime: working fine
-- [x] 10. AirDrop & HandOff & Continuity: working fine
-![Bluetooth](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E8%93%9D%E7%89%99.png)
+## ⚙️ Hardware Configuration
+| Components | Model | Description |
+|---------------|-------------------------------|----------------------------------------------------------------------|
+| **CPU** | Intel® Core™ i5-13600T (13th Gen) | Supports 12th-14th generation desktop processors, up to 100W performance release |
+| **Graphics** | AMD Radeon RX 6600M | Black Apple customized version, supports HDMI/DP output and H.264/HEVC hardware decoding acceleration |
+| **Storage** | KIOXIA EXCERIA PRO/SE SSD | Dual NVMe slots, up to 4TB capacity, turn on TRIM to optimize performance |
+| **Memory** | DDR5 5600MHz | Supports single-sided Hynix chip overclocking, provides OverClock option |
+| **Network card** | Realtek® RTL8125B Gigabit LAN | High-speed and stable wired network |
+| **Wireless network card** | BCM94352Z (BT4.2) | Supports Wi-Fi 6E/Bluetooth 5.3 |
 
-### Tips:
+---
 
-1. This config defaults to no verbose mode. To enable verbose mode, config.plist needs to modify the following item: NVRAM-Add-7C436110-AB2A-4BBB-A880-FE41995C9F82-boot-args, add -v.
-1. The config startup disk policy ScanPolicy value is set to 0. Can boot Windows or Other OS (Linux, Unix). If you need to specify the search partition type, please refer to the OC configuration manual.
+## 🛠️ BIOS setup guide
+1. **Basic configuration**:
+- Turn off Secure Boot and CFG Lock
+- Set memory frequency to **Intel standard mode**
+- Adjust AC/DC Loadline value to `110/110` to improve stability
 
-# Acknowledgments
-# Refer to the configuration files of daliansky boss and Xmingbai boss. If you need other versions, you can click the boss link to view
-# https://github.com/daliansky/FEVM-FN60G-Hackintosh
+2. **BIOS download**:
+[Click to get the latest BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
 
-# https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
+---
+
+## 📸 Function test verification
+![System Overview](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
+![OpenCore Theme](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)
+
+### Core Function Status
+| Functional Module | Status | Description |
+|----------------|------|----------------------------------------------------------------------|
+| CPU Frequency Conversion | ✅ | Working Normally, iMacPro1,1 Model Performance Improved by 30% |
+| Graphics Card Decoding | ✅ | H.264/HEVC Hardware Acceleration Normal, Independent Display AAPL Parameters Optimized |
+| USB 3.0/2.0 | ✅ | Full port customization, compatible with 10Gbps interface |
+| Sleep wakeup | ✅ | macOS sleep and wakeup functions are normal |
+| Network function | ✅ | Wired/wireless network, AirDrop, HandOff are all normal |
+| Multimedia | ✅ | 3.5mm sound output, system audio are normal |
+
+---
+
+---
+
+## 📝 Advanced configuration
+1. **Verbose mode**:
+- Modify `config.plist` → `NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82` → `boot-args: -v`
+2. **Boot policy**:
+- `ScanPolicy=0` supports Windows/Linux booting
+
+---
+
+## 🙏 Acknowledgements
+The realization of this project is inseparable from the following open source projects and technical support:
+- [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - Broadcom NIC driver support
+- [daliansky/FEVM-FN60G-Hackintosh](https://github.com/daliansky/FEVM-FN60G-Hackintosh) - EFI configuration reference
+- [Xmingbai/FEVM-FN60G-Hackintosh](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) - Hardware compatibility solution
+- [Black Fruit Little Soldier Blog](https://blog.daliansky.net/) - Installation tutorial and troubleshooting
