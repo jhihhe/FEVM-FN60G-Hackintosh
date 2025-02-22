@@ -1,10 +1,38 @@
-# FEVM-FN60G Hackintosh EFI 配置指南  
-[![OpenCore 1.0.3 MOD](https://img.shields.io/badge/OpenCore-1.0.3_MOD-blue)](https://github.com/acidanthera/OpenCorePkg)  
-[![macOS Sequoia](https://img.shields.io/badge/macOS-Sequoia_15.1-red)](https://www.apple.com/macos)  
-[![GitHub Stars](https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=social)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers)  
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/macOS-Sequoia_15.1-success?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
+</p>
+
+<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>
+<div align="center">
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
+</div>
 
 ---
 
+## 🚀 快速开始
+**最新稳定版EFI下载** → [![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+
+> **重要提示**  
+> 使用前请自行生成以下三码并修改对应配置：
+> - Board Serial Number
+> - 序列号
+> - SmUUID
+> 
+> 需修改文件位置：
+> - SysParameter → 自定义UUID
+> - RtVariables → MLB & ROM
+
+---
+
+## 📜 更新日志
+**核心组件升级**  
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square) 
+![Kexts](https://img.shields.io/badge/Kexts-2023.11_Latest-4BC51D?style=flat-square)
+
+---
 ## 📌 项目概述  
 专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.1 系统，提供以下核心功能：  
 - CPU 变频加速（iMacPro1,1 机型性能提升 30%）  
