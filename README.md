@@ -1,69 +1,125 @@
-# 🚀 FEVM-FN60G-Hackintosh  
-[![OpenCore 1.0.3](https://img.shields.io/badge/OpenCore-1.0.3_MOD-blue)](https://github.com/acidanthera/OpenCorePkg)  
-[![macOS Sequoia](https://img.shields.io/badge/macOS-Sequoia_15.1-red)](https://www.apple.com/macos)  
+# FEVM-FN60G Hackintosh EFI 配置指南  
+[![OpenCore 1.0.3 MOD](https://img.shields.io/badge/OpenCore-1.0.3_MOD-blue)](https://github.com/acidanthera/OpenCorePkg)  
+[![macOS 15.1](https://img.shields.io/badge/macOS-Sequoia_15.1-red)](https://www.apple.com/macos)  
+[![GitHub Stars](https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=social)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers)  
 
 ---
 
-## 📥 下载  
-[![最新版本](https://img.shields.io/badge/下载-Releases-green)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
+## 🚀 项目概述  
+专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.1 系统，提供以下核心功能：  
+- CPU 变频加速  
+- 显卡 HIDPI 支持  
+- 双系统引导 (Windows/Linux)  
+- 完整网络与多媒体功能  
 
 ---
 
-## ⚠️ 重要提示  
-**必须自行生成以下参数并修改对应配置**：  
-- Board Serial Number  
-- 序列号  
-- SmUUID  
-- SysParameter 系统参数中的"自定义UUID"  
-- RtVariables 变量设置中的 MLB、ROM  
+## 📦 硬件配置  
+| 组件          | 型号                          |  
+|---------------|-------------------------------|  
+| **CPU**       | Intel® Core™ i5-13600T (13th Gen) |  
+| **显卡**      | AMD Radeon RX 6600M           |  
+| **存储**      | KIOXIA EXCERIA PRO/SE SSD     |  
 
 ---
 
-## 🛠️ 硬件配置  
-| 组件        | 型号                                   |  
-|-------------|----------------------------------------|  
-| **机型**    | FEVM-FN60G (BIOS Version B11HF210)     |  
-| **CPU**     | Intel® Core™ i5-13600T (13th Gen)      |  
-| **显卡**    | AMD Radeon RX 6600M                    |  
-| **存储**    | KIOXIA EXCERIA PRO SSD SE10-2TB
-KIOXIA EXCERIA G2 SSD RD20-2TB |  
+## 📌 更新日志 (2025.02.22)  
+- 🛠️ 全面适配 OpenCore 1.0.3 MOD 版  
+- 🔄 更新所有 Kext 驱动至最新版本  
+- 📱 新增 U 盘安装支持 (hfsplus.efi)  
+- 🖥️ 优化 AMD Radeon Pro W6600 显卡配置  
+- 🔋 集成黑果小兵 USB 定制驱动  
 
 ---
 
-## 📜 更新日志 (2025.02.22)  
-- ✅ OpenCore 1.0.3 MOD 版  
-- ✅ 全量更新 Kext 驱动  
-- ✅ 新增 hfsplus.efi 支持 U 盘安装  
+## ⚠️ 注意事项  
+1. **必填参数**：需自行生成并修改 `Board Serial Number`、`SmUUID`、`SysParameter` 中的 "自定义UUID" 等关键配置[1](@ref)。  
+2. **BIOS 设置**：  
+  - 关闭 Secure Boot  
+  - 禁用 CFG Lock  
+  - 内存频率设为 **Intel 规范模式**  
 
 ---
 
-## ⚙️ BIOS 设置  
-1. 关闭 Secure Boot  
-2. 禁用 CFG Lock  
-3. 内存频率遵循 Intel 规范  
+## 📸 系统实测  
+![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)  
+![OpenCore 主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)  
 
 ---
 
-## 🖥️ 功能状态  
-### 核心功能  
-- [x] CPU 变频  
-- [x] 显卡 HIDPI  
-- [x] USB 全端口定制  
-
-### 网络功能  
-- [x] 有线/无线网络  
-- [x] AirDrop  
-
-### 系统功能  
-- [x] 睡眠/唤醒  
-
----
-
-## 📸 系统截图  
-![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)  
-![OpenCore主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)  
+## 📝 高级配置  
+1. **Verbose 模式**：  
+  - 修改 NVRAM → 添加 `boot-args: -v`  
+2. **启动策略**：  
+  - 设置 `ScanPolicy=0` 支持多系统引导  
 
 ---
 
 ## 🙏 鸣谢  
-参考了 [daliansky](https://github.com/daliansky/FEVM-FN60G-Hackintosh) 和 [Xmingbai](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) 的配置文件。  
+- 参考了 [daliansky](https://github.com/daliansky/FEVM-FN60G-Hackintosh) 和 [Xmingbai](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) 的配置方案[5](@ref)。  
+- 使用工具：[Quine](https://quine.sh) 生成小卡片[2,6](@ref)，[readme.so](https://readme.so) 优化布局[3](@ref)。  
+
+---
+
+**可复制的 Markdown**：  
+```markdown
+# FEVM-FN60G Hackintosh EFI 配置指南  
+[![OpenCore 1.0.3 MOD](https://img.shields.io/badge/OpenCore-1.0.3_MOD-blue)](https://github.com/acidanthera/OpenCorePkg)  
+[![macOS 15.1](https://img.shields.io/badge/macOS-Sequoia_15.1-red)](https://www.apple.com/macos)  
+[![GitHub Stars](https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=social)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers)  
+
+---
+
+## 🚀 项目概述  
+专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.1 系统，提供以下核心功能：  
+- CPU 变频加速  
+- 显卡 HIDPI 支持  
+- 双系统引导 (Windows/Linux)  
+- 完整网络与多媒体功能  
+
+---
+
+## 📦 硬件配置  
+| 组件          | 型号                          |  
+|---------------|-------------------------------|  
+| **CPU**       | Intel® Core™ i5-13600T (13th Gen) |  
+| **显卡**      | AMD Radeon RX 6600M           |  
+| **存储**      | KIOXIA EXCERIA PRO/SE SSD     |  
+
+---
+
+## 📌 更新日志 (2025.02.22)  
+- 🛠️ 全面适配 OpenCore 1.0.3 MOD 版  
+- 🔄 更新所有 Kext 驱动至最新版本  
+- 📱 新增 U 盘安装支持 (hfsplus.efi)  
+- 🖥️ 优化 AMD Radeon Pro W6600 显卡配置  
+- 🔋 集成黑果小兵 USB 定制驱动  
+
+---
+
+## ⚠️ 注意事项  
+1. **必填参数**：需自行生成并修改 `Board Serial Number`、`SmUUID`、`SysParameter` 中的 "自定义UUID" 等关键配置[1](@ref)。  
+2. **BIOS 设置**：  
+  - 关闭 Secure Boot  
+  - 禁用 CFG Lock  
+  - 内存频率设为 **Intel 规范模式**  
+
+---
+
+## 📸 系统实测  
+![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)  
+![OpenCore 主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)  
+
+---
+
+## 📝 高级配置  
+1. **Verbose 模式**：  
+  - 修改 NVRAM → 添加 `boot-args: -v`  
+2. **启动策略**：  
+  - 设置 `ScanPolicy=0` 支持多系统引导  
+
+---
+
+## 🙏 鸣谢  
+- 参考了 [daliansky](https://github.com/daliansky/FEVM-FN60G-Hackintosh) 和 [Xmingbai](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) 的配置方案[5](@ref)。  
+- 使用工具：[Quine](https://quine.sh) 生成小卡片[2,6](@ref)，[readme.so](https://readme.so) 优化布局[3](@ref)。  
