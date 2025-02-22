@@ -1,81 +1,97 @@
-# FEVM-FN60G-Hackintosh-EFI_OpenCore-macOS
+# 🍎 FEVM-FN60G-Hackintosh-EFI_OpenCore-macOS
 
-# [中文](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md)｜[English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md)
+[![OpenCore 1.0.3](https://img.shields.io/badge/OpenCore-1.0.3_MOD-1575F9?logo=opencontainersinitiative&logoColor=fff)](https://github.com/acidanthera/OpenCorePkg)
+[![macOS Sequoia](https://img.shields.io/badge/macOS-Sequoia_15.1-FF2D55?logo=apple)](https://www.apple.com/macos)
+[![最新版本](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?label=下载&color=28a745&logo=github)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+[![License](https://img.shields.io/badge/License-MIT-4DA1F2)](https://choosealicense.com/licenses/mit/)
 
-# 下载点击[releases](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+[中文](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md) | [English](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md)
 
-# 请自行生成Board Serial Number、序列号、SmUUID，并相应的修改SysPrameter系统参数中的“自定义UUID”，和RtVariables变量设置中的MLB、ROM
+## 📖 目录
+- [⚠️ 重要提示](#-重要提示)
+- [🛠️ 硬件配置](#️-硬件配置)
+- [📜 更新日志](#-更新日志)
+- [⚙️ BIOS 设置](#️-bios-设置)
+- [🖥️ 功能状态](#️-功能状态)
+- [📸 系统截图](#-系统截图)
+- [🔧 高级设置](#-高级设置)
+- [🙏 鸣谢](#-鸣谢)
 
-## 更新日志：
-- [x] 1. 更新 oc 版本到1.0.3 MOD版
-- [x] 2. 更新所有kext内核拓展驱动到最新版本
-- [x] 3. 添加hfsplus.efi以支持u盘安装
-- [x] 4. 显卡定制为AMD Radeon Pro W6600以增强性能
-- [x] 5. USB驱动更换为daliansky黑果小兵最新定制版本
-- [x] 6. 更新IOSkywalkFamily.kext到1.2.0版本,以支持macOS Sonoma 14.7及Sequoia 15.1
+## ⚠️ 重要提示
+> **警告**  
+> 必须自行生成以下参数并修改对应配置：
+> - `Board Serial Number`
+> - `序列号`
+> - `SmUUID`
+> - `SysParameter` 系统参数中的 "自定义UUID"
+> - `RtVariables` 变量设置中的 `MLB`、`ROM`
 
+## 🛠️ 硬件配置
+| 组件类别       | 型号                                   |
+|----------------|----------------------------------------|
+| **机型**       | FEVM-FN60G (BIOS Version B11HF210)     |
+| **CPU**        | Intel® Core™ i5-13600T (13th Gen)      |
+| **显卡**       | AMD Radeon RX 6600M                    |
+| **板载网卡**   | Realtek® RTL8125B Gigabit LAN          |
+| **无线网卡**   | BCM94352Z (BT4.2)                      |
+| **存储方案**   | KIOXIA EXCERIA PRO SSD SE10-2TB
+KIOXIA EXCERIA G2 SSD RD20-2TB |
 
-![系统报告](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
+## 📜 更新日志 (2025.02.22)
+- 🚀 **核心更新**
+  - ✅ OpenCore 1.0.3 MOD 版
+  - ✅ 全量更新 Kext 驱动
+  - ✅ 新增 hfsplus.efi 支持 U 盘安装
 
-## 配置
-1. 机型: FEVM-FN60G（BIOS Version FN60G-BIOS（B11HF210）
-   
-   1.修复博通网卡Windows兼容性。
-   
-   2.修正14代部分处理器兼容性问题。
-   
-   3.修正部分内存条兼容性问题,支持5600频率内存
-   
-   4.为兼容更多类型的处理器提高稳定性，修正AC/DC loadline数值为110/110
-   
-   5.内存频率修改为遵循intel处理器支持的频率和规范（默认不做内存超频），加入OverClock超频选项代替之前默认超频设置（单面海力士颗粒内存可选）
-   
-   请点击这里[下载BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
+- 🎮 **显卡优化**
+  - ✅ AMD Radeon Pro W6600 显卡定制
+  - ✅ 黑果小兵最新 USB 定制驱动
+  - ✅ IOSkywalkFamily.kext 1.2.0 支持 macOS 14.7/15.1
 
-1. CPU:13th Generation Intel® Core™ i5-13600T Processors
-1. 显卡: AMD Radeon RX 6600M
-1. 板载网卡: Realtek® RTL8125B Gigabit LAN Controller
-1. WiFi/蓝牙: BCM94352Z（BT4.2）
-1. 固态硬盘: 1.KIOXIA-EXCERIA PRO SSD SE10-2TB（开启TRIM）2.KIOXIA-EXCERIA G2 SSD RD20-2TB
-                      
+## ⚙️ BIOS 设置
+1. `关闭 Secure Boot`
+2. `禁用 CFG Lock`
+3. `内存频率遵循 Intel 规范`
+4. `AC/DC Loadline 设为 110/110`
 
-### BIOS设置
-1. 关闭secure boot &cfg lock
+[![BIOS下载指南](https://img.shields.io/badge/BIOS_下载-图文教程-FFD33D?logo=biometrics-institute)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
 
-# **可适用操作系统版本：支持macOS Catalina/Big Sur/macOS Monterey/macOS Ventura/macOS Sonoma/macOS Sequoia**
-1. OpenCore版本：1.0.3
-![主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg)
-- [x] 1. CPU变频：工作正常，机型设置imacpro1,1 比macpro7,1增加30%性能
-![CPU](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E6%B5%8B%E8%AF%95.png)
-![CPU1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU.png)
-![CPU2](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B.png)
-![CPU3](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/CPU%E7%9B%91%E6%B5%8B1.png)
-- [x] 2. 显卡：工作正常，开启HIDPI，开启H.264&HEVC硬件解码加速，RX6600M：工作正常，增加独显AAPL,slot-name参数
-![显卡](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%98%BE%E5%8D%A1.png)
-![显卡1](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/GPU%E6%B5%8B%E8%AF%951.png)
-![硬件解码加速：H.264&HEVC解码](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png)
-- [x] 3. 3.5mm声音：工作正常
-- [x] 4. USB：工作正常
-![USB](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/USB.png)
-- [x] 5. 有线网卡：工作正常
-![有线网卡](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%9C%89%E7%BA%BF%E7%BD%91%E5%8D%A1.png)
-- [x] 6. 无线网卡：工作正常
+## 🖥️ 功能状态
+<details>
+<summary>📌 点击展开功能详情</summary>
 
-![Wi-Fi](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E6%97%A0%E7%BA%BF%E7%BD%91.png)
-- [x] 7. 睡眠唤醒：工作正常 
-- [x] 8. 关机开机：工作正常
-- [x] 9. iCloud & App Store & iMessage & FaceTime：正常
-- [x] 10. AirDrop & HandOff & Continuity：正常。
-![蓝牙](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E8%93%9D%E7%89%99.png)
+### 🎯 核心功能
+- [x] CPU 变频 (iMacPro1,1 机型提升30%性能)
+- [x] 显卡 HIDPI + 硬件解码加速
+- [x] USB 3.0/2.0 全端口定制
+- [x] 双系统引导支持 (Windows/Linux)
 
-### Tips：
+### 🌐 网络功能
+- [x] 有线/无线网络
+- [x] AirDrop & HandOff
+- [x] iCloud 全家桶
 
-1. 该config默认为无verbose模式。如需启用verbose模式，config.plist需要修改以下一项：NVRAM-Add-7C436110-AB2A-4BBB-A880-FE41995C9F82-boot-args，添加-v。
-1. 该config启动盘策略 ScanPolicy 值设置为0。可引导Windows或Other OS（Linux、Unix）如需指定搜索分区类型，可参考OC配置手册。
+### ⚡ 系统功能
+- [x] 睡眠/唤醒
+- [x] 音频输出
+- [x] 硬件监控
+</details>
 
-# 鸣谢 
-# 参考了daliansky大佬和Xmingbai大佬的配置文件,如果需其他版本可点击大佬链接查看
-# https://github.com/daliansky/FEVM-FN60G-Hackintosh
+## 📸 系统截图
+<details>
+<summary>🖼️ 点击查看系统截图</summary>
 
-# https://github.com/Xmingbai/FEVM-FN60G-Hackintosh
+| 系统概览 | OpenCore 主题 | 硬件解码 |
+|----------|---------------|----------|
+| ![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png) | ![OpenCore主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/OC%E4%B8%BB%E9%A2%98.jpeg) | ![硬件解码](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E7%A1%AC%E8%A7%A3%E7%A0%81.png) |
+</details>
 
+## 🔧 高级设置
+```markdown
+# 启用 Verbose 模式
+1. 修改 NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82
+2. 在 boot-args 中添加 `-v` 参数
+
+# 启动策略配置
+- ScanPolicy=0 (支持 Windows/Linux 引导)
+- 自定义策略参考 [OpenCore 官方文档](https://dortania.github.io/OpenCore-Post-Install/)
