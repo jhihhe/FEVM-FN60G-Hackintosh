@@ -58,5 +58,3 @@
 ## 🙏 鸣谢  
 - 参考了 [daliansky](https://github.com/daliansky/FEVM-FN60G-Hackintosh) 和 [Xmingbai](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) 的配置方案[5](@ref)。  
 - 使用工具：[Quine](https://quine.sh) 生成小卡片[2,6](@ref)，[readme.so](https://readme.so) 优化布局[3](@ref)。  
-
----
