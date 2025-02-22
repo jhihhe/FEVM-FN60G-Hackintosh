@@ -96,7 +96,7 @@ KIOXIA EXCERIA G2 SSD RD20-2TB |
 - ScanPolicy=0 (支持 Windows/Linux 引导)
 - 自定义策略参考 [OpenCore 官方文档](https://dortania.github.io/OpenCore-Post-Install/)
 
-## 🙏 鸣谢
+### 🙏 鸣谢
 本项目的实现离不开以下开源项目和技术支持：
 - [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - 博通网卡驱动支持
 - [daliansky/FEVM-FN60G-Hackintosh](https://github.com/daliansky/FEVM-FN60G-Hackintosh) - EFI配置参考
