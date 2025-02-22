@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square&logo=apple" />
-  <img src="https://img.shields.io/badge/macOS-Sequoia_15.1-success?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/macOS-Sequoia_15.3-success?style=flat-square&logo=apple" />
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
 </p>
 
@@ -34,7 +34,7 @@
 
 ---
 ## 📌 项目概述  
-专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.1 系统，提供以下核心功能：  
+专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.3 系统，提供以下核心功能：  
 - CPU 变频加速（iMacPro1,1 机型性能提升 30%）  
 - 显卡 HIDPI 支持与硬件解码加速  
 - 双系统引导（Windows/Linux）  
@@ -50,7 +50,7 @@
   - ✅ 新增 `hfsplus.efi` 支持 U 盘安装  
   - ✅ AMD Radeon Pro W6600M 显卡定制优化  
   - ✅ 黑果小兵 USB 驱动集成  
-  - ✅ IOSkywalkFamily.kext 更新至 1.2.0（兼容 Sonoma 14.7/Sequoia 15.1）  
+  - ✅ IOSkywalkFamily.kext 更新至 1.2.0（兼容 Sonoma/Sequoia）  
 
 ---
 
