@@ -27,7 +27,7 @@
 ---
 ## 📌 Project Overview
 OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th generation + AMD RX 6600M)**, supports macOS 15.1 system, and provides the following core functions:
-- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)
+- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)  
 - Graphics card HIDPI support and hardware decoding acceleration
 - Dual system boot (Windows/Linux)
 - Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)
@@ -37,10 +37,10 @@ OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th genera
 ## 📥 Download and update
 - **Latest version**: [Click to download](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
 - **Update log**:
-- ✅ OpenCore 1.0.3 MOD version adaptation
+- ✅ OpenCore 1.0.4 MOD version adaptation
 - ✅ All Kext drivers updated to the latest version
 - ✅ Add `hfsplus.efi` to support USB installation
-- ✅ AMD Radeon Pro W6600M graphics card customization optimization
+- ✅ AMD Radeon Pro W6600M graphics card customization optimization  
 - ✅ Black Fruit Soldier USB driver integration
 - ✅ IOSkywalkFamily.kext Updated to 1.2.0 (compatible with Sonoma 14.7/Sequoia 15.1)
 
