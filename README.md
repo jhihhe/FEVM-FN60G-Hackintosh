@@ -47,7 +47,7 @@
 ## 📥 下载与更新  
 - **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
 - **更新日志**：  
-  - ✅ OpenCore 1.0.3 MOD 版本适配  
+  - ✅ OpenCore 1.0.4 MOD 版本适配    
   - ✅ 全 Kext 驱动更新至最新版本  
   - ✅ 新增 `hfsplus.efi` 支持 U 盘安装  
   - ✅ AMD Radeon Pro W6600M 显卡定制优化  
@@ -75,12 +75,12 @@
    - AC/DC Loadline 数值调整为 `110/110` 以提升稳定性  
 
 2. **BIOS 下载**：  
-   [点击获取最新 BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)  
+   [点击获取最新 BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)    
 
 ---
 
 ## 📸 功能实测验证  
-![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)  
+![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)    
 ![OpenCore 主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)  
 
 ### 核心功能状态  
