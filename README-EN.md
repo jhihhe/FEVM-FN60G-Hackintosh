@@ -1,5 +1,5 @@
-<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.1-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜
-<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
+<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜  
+<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>  
 </div>
 
 ---
@@ -21,14 +21,14 @@
 
 ## 📜 Update log
 **Core component upgrade**
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.3_MOD-9cf?style=flat-square)
-![Kexts](https://img.shields.io/badge/Kexts-2023.11_Latest-4BC51D?style=flat-square)
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square)  
+![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)  
 
 ---
 ## 📌 Project Overview
-OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th generation + AMD RX 6600M)**, supports macOS 15.1 system, and provides the following core functions:
+OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th generation + AMD RX 6600M)**, supports macOS 15.1 system, and provides the following core functions:  
 - CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)  
-- Graphics card HIDPI support and hardware decoding acceleration
+- Graphics card HIDPI support and hardware decoding acceleration  
 - Dual system boot (Windows/Linux)
 - Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)
 
