@@ -1,21 +1,21 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square&logo=apple" />  
-  <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" />  
+  <img src="https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />  
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
 
 </p>
 
 <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
 <div align="center">
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜  
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>  
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
 </div>
 
 ---
 
 ## 🚀 快速开始
-**最新稳定版EFI下载** → [![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
+**最新稳定版EFI下载** → [![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)    
 
 > **重要提示**  
 > 使用前请自行生成以下三码并修改对应配置：
@@ -31,8 +31,8 @@
 
 ## 📜 更新日志
 **核心组件升级**  
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square)   
-![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)  
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square)     
+![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)    
 
 ---
 ## 📌 项目概述  
@@ -45,9 +45,9 @@
 ---
 
 ## 📥 下载与更新  
-- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
+- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)      
 - **更新日志**：  
-  - ✅ OpenCore 1.0.4 MOD 版本适配    
+  - ✅ OpenCore 1.0.5 MOD 版本适配      
   - ✅ 全 Kext 驱动更新至最新版本  
   - ✅ 新增 `hfsplus.efi` 支持 U 盘安装  
   - ✅ AMD Radeon Pro W6600M 显卡定制优化  
