@@ -1,5 +1,15 @@
-<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
-<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />  
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
+
+</p>
+
+<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
+<div align="center">
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>      
 </div>
 
 ---
