@@ -1,5 +1,5 @@
-<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜  
-<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>  
+<p align="center"> <img src="https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" /> <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" /> </p> <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1> <div align="center"> <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
+<a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
 </div>
 
 ---
@@ -14,35 +14,35 @@
 > - SmUUID
 >
 > File location to be modified:
-> - SysParameter → Custom UUID
+> - SysParameter → Custom UUID  
 > - RtVariables → MLB & ROM
 
 ---
 
 ## 📜 Update log
 **Core component upgrade**
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.4_MOD-9cf?style=flat-square)  
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square)    
 ![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)  
 
 ---
 ## 📌 Project Overview
-OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th generation + AMD RX 6600M)**, supports macOS 15.1 system, and provides the following core functions:  
-- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)  
-- Graphics card HIDPI support and hardware decoding acceleration  
+OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13/14th generation + AMD RX 6600M)**, supports macOS 15.4 system, and provides the following core functions:    
+- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)    
+- Graphics card HIDPI support and hardware decoding acceleration    
 - Dual system boot (Windows/Linux)
 - Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)
 
 ---
 
 ## 📥 Download and update
-- **Latest version**: [Click to download](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+- **Latest version**: [Click to download](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
 - **Update log**:
-- ✅ OpenCore 1.0.4 MOD version adaptation
+- ✅ OpenCore 1.0.5 MOD version adaptation  
 - ✅ All Kext drivers updated to the latest version
 - ✅ Add `hfsplus.efi` to support USB installation
 - ✅ AMD Radeon Pro W6600M graphics card customization optimization  
 - ✅ Black Fruit Soldier USB driver integration
-- ✅ IOSkywalkFamily.kext Updated to 1.2.0 (compatible with Sonoma 14.7/Sequoia 15.1)
+- ✅ IOSkywalkFamily.kext Updated to 1.2.0 (compatible with Sonoma/Sequoia)  
 
 ---
 
@@ -52,7 +52,7 @@ OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th genera
 | **CPU** | Intel® Core™ i5-13600T (13th Gen) | Supports 12th-14th generation desktop processors, up to 100W performance release |
 | **Graphics** | AMD Radeon RX 6600M | Black Apple customized version, supports HDMI/DP output and H.264/HEVC hardware decoding acceleration |
 | **Storage** | KIOXIA EXCERIA PRO/SE SSD | Dual NVMe slots, up to 4TB capacity, turn on TRIM to optimize performance |
-| **Memory** | DDR5 5600MHz | Supports single-sided Hynix chip overclocking, provides OverClock option |
+| **Memory** | DDR5 5600MHz | Supports single-sided Hynix chip overclocking, provides OverClock option   |
 | **Network card** | Realtek® RTL8125B Gigabit LAN | High-speed and stable wired network |
 | **Wireless network card** | BCM94352Z (BT4.2) | Supports Wi-Fi 6E/Bluetooth 5.3 |
 
@@ -62,7 +62,7 @@ OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13th genera
 1. **Basic configuration**:
 - Turn off Secure Boot and CFG Lock
 - Set memory frequency to **Intel standard mode**
-- Adjust AC/DC Loadline value to `110/110` to improve stability
+- Adjust AC/DC Loadline value to `110/110` to improve stability  
 
 2. **BIOS download**:
 [Click to get the latest BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)
