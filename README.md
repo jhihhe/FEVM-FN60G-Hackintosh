@@ -36,7 +36,7 @@
 
 ---
 ## 📌 项目概述  
-专为 **FEVM-FN60G (Intel 13代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.3 系统，提供以下核心功能：  
+专为 **FEVM-FN60G (Intel 13/14代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.4 系统，提供以下核心功能：  
 - CPU 变频加速（iMacPro1,1 机型性能提升 30%）  
 - 显卡 HIDPI 支持与硬件解码加速  
 - 双系统引导（Windows/Linux）  
