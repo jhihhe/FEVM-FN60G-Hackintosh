@@ -9,8 +9,10 @@
 <h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
 <div align="center">
   <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>      
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>        
 </div>
+
+![System Overview](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png  )
 
 ---
 
@@ -25,29 +27,29 @@
 >
 > File location to be modified:
 > - SysParameter → Custom UUID  
-> - RtVariables → MLB & ROM
+> - RtVariables → MLB & ROM  
 
 ---
 
 ## 📜 Update log
 **Core component upgrade**
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square)    
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square)      
 ![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)  
 
 ---
 ## 📌 Project Overview
 OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13/14th generation + AMD RX 6600M)**, supports macOS 15.4 system, and provides the following core functions:    
-- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)    
+- CPU frequency conversion acceleration (iMacPro1,1 model performance increased by 30%)      
 - Graphics card HIDPI support and hardware decoding acceleration    
 - Dual system boot (Windows/Linux)
-- Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)
+- Complete network and multimedia functions (AirDrop/Continuity/iCloud family bucket)  
 
 ---
 
 ## 📥 Download and update
 - **Latest version**: [Click to download](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
 - **Update log**:
-- ✅ OpenCore 1.0.5 MOD version adaptation  
+- ✅ OpenCore 1.0.5 MOD version adaptation    
 - ✅ All Kext drivers updated to the latest version
 - ✅ Add `hfsplus.efi` to support USB installation
 - ✅ AMD Radeon Pro W6600M graphics card customization optimization  
@@ -80,13 +82,12 @@ OpenCore EFI configuration solution designed for **FEVM-FN60G (Intel 13/14th gen
 ---
 
 ## 📸 Function test verification
-![System Overview](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
-![OpenCore Theme](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)
+![OpenCore Theme](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg  )
 
 ### Core Function Status
 | Functional Module | Status | Description |
 |----------------|------|----------------------------------------------------------------------|
-| CPU Frequency Conversion | ✅ | Working Normally, iMacPro1,1 Model Performance Improved by 30% |
+| CPU Frequency Conversion | ✅ | Working Normally, iMacPro1,1 Model Performance Improved by 30%   |
 | Graphics Card Decoding | ✅ | H.264/HEVC Hardware Acceleration Normal, Independent Display AAPL Parameters Optimized |
 | USB 3.0/2.0 | ✅ | Full port customization, compatible with 10Gbps interface |
 | Sleep wakeup | ✅ | macOS sleep and wakeup functions are normal |
