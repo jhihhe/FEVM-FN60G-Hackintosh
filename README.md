@@ -36,7 +36,7 @@
 ![OpenCore](https://img.shields.io/badge/OpenCore-1.0.8_MOD-9cf?style=flat-square)  
 ![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)
 
-- ✅ 正式支持 macOS Sequoia 26.3
+- ✅ 正式支持 macOS Tahoe 26.3
 - ✅ 有线网卡 / 无线网卡 / 声卡全部实现稳定驱动
 - ✅ 核心 Kext 全面升级并针对 26.3 优化加载顺序
 - ✅ ACPI 与引导参数针对新系统版本微调
@@ -46,9 +46,9 @@
 
 ## 📌 项目概述  
 本项目是专为 **FEVM-FN60G（Intel 13 / 14 代 + AMD RX 6600M）** 打造的 **OpenCore EFI 解决方案**，  
-面向 **macOS Sequoia 26.3**，在保证系统稳定性的前提下，实现硬件完整驱动与日常可用性：
+面向 **macOS Tahoe 26.3**，在保证系统稳定性的前提下，实现硬件完整驱动与日常可用性：
 
-- macOS 26.3 原生级运行体验  
+- macOS Tahoe 26.3 原生级运行体验  
 - CPU 变频加速（iMacPro1,1 机型，性能与稳定性平衡）  
 - AMD 独显 HIDPI 与完整硬件解码  
 - 有线 / 无线网络与蓝牙连续互通功能正常  
@@ -62,7 +62,7 @@
 - **更新内容摘要**：
   - ✅ OpenCore 1.0.7 MOD 核心更新
   - ✅ 全量 Kext 同步最新稳定版本
-  - ✅ 针对 macOS 26.3 的 ACPI / 引导参数调整
+  - ✅ 针对 macOS Tahoe 26.3 的 ACPI / 引导参数调整
   - ✅ 网络与音频相关驱动稳定性增强
   - ✅ USB 映射与电源管理持续优化
 
