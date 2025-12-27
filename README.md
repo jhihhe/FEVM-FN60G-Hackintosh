@@ -1,6 +1,6 @@
 <p align="center">
   <img src="https://img.shields.io/badge/OpenCore-1.0.7_MOD-9cf?style=flat-square&logo=apple" />    
-  <img src="https://img.shields.io/badge/macOS-Sequoia_26.3-success?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/macOS-Tahoe_26.3-success?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
 </p>
