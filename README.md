@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-1.0.8_MOD-9cf?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/OpenCore-1.0.7_MOD-9cf?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/macOS-Sequoia_26.3-success?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
@@ -60,7 +60,7 @@
 ## 📥 下载与更新  
 - **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
 - **更新内容摘要**：
-  - ✅ OpenCore 1.0.8 MOD 核心更新
+  - ✅ OpenCore 1.0.7 MOD 核心更新
   - ✅ 全量 Kext 同步最新稳定版本
   - ✅ 针对 macOS 26.3 的 ACPI / 引导参数调整
   - ✅ 网络与音频相关驱动稳定性增强
