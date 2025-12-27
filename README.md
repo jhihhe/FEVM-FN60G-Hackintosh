@@ -1,110 +1,103 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square&logo=apple" />    
-  <img src="https://img.shields.io/badge/macOS-Sequoia_15.4-success?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/OpenCore-1.0.8_MOD-9cf?style=flat-square&logo=apple" />    
+  <img src="https://img.shields.io/badge/macOS-Sequoia_26.3-success?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
-
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
 </p>
 
-<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
+<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
 <div align="center">
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
 </div>
 
-
-
-![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)        
+![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 ---
 
 ## 🚀 快速开始
-**最新稳定版EFI下载** → [![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)    
+**最新稳定版 EFI 下载** →  
+[![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
 
 > **重要提示**  
-> 使用前请自行生成以下三码并修改对应配置：
-> - Board Serial Number
-> - 序列号
-> - SmUUID
-> 
-> 需修改文件位置：
-> - SysParameter → 自定义UUID
-> - RtVariables → MLB & ROM
+> 使用前请自行生成并替换以下三码：
+> - Board Serial Number  
+> - Serial Number  
+> - SmUUID  
+>
+> 修改位置：
+> - `PlatformInfo → Generic`
+> - `NVRAM → RtVariables → MLB & ROM`
 
 ---
 
 ## 📜 更新日志
 **核心组件升级**  
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.5_MOD-9cf?style=flat-square)     
-![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)    
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.8_MOD-9cf?style=flat-square)  
+![Kexts](https://img.shields.io/badge/Kexts-2025 🔍 🔍.03_Latest-4BC51D?style=flat-square)
+
+- ✅ 正式支持 macOS Sequoia 26.3
+- ✅ 有线网卡 / 无线网卡 / 声卡全部实现稳定驱动
+- ✅ 核心 Kext 全面升级并针对 26.3 优化加载顺序
+- ✅ ACPI 与引导参数针对新系统版本微调
+- ✅ 提升睡眠唤醒与网络唤醒稳定性
 
 ---
+
 ## 📌 项目概述  
-专为 **FEVM-FN60G (Intel 13/14代 + AMD RX 6600M)** 设计的 OpenCore EFI 配置方案，支持 macOS 15.4 系统，提供以下核心功能：  
-- CPU 变频加速（iMacPro1,1 机型性能提升 30%）  
-- 显卡 HIDPI 支持与硬件解码加速  
-- 双系统引导（Windows/Linux）  
-- 完整网络与多媒体功能（AirDrop/Continuity/iCloud 全家桶）  
+本项目是专为 **FEVM-FN60G（Intel 13 / 14 代 + AMD RX 6600M）** 打造的 **OpenCore EFI 解决方案**，  
+面向 **macOS Sequoia 26.3**，在保证系统稳定性的前提下，实现硬件完整驱动与日常可用性：
+
+- macOS 26.3 原生级运行体验  
+- CPU 变频加速（iMacPro1,1 机型，性能与稳定性平衡）  
+- AMD 独显 HIDPI 与完整硬件解码  
+- 有线 / 无线网络与蓝牙连续互通功能正常  
+- 声卡完整驱动，系统音量与多应用音频输出正常  
+- Windows / Linux 多系统引导共存  
 
 ---
 
 ## 📥 下载与更新  
-- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)      
-- **更新日志**：  
-  - ✅ OpenCore 1.0.5 MOD 版本适配      
-  - ✅ 全 Kext 驱动更新至最新版本  
-  - ✅ 新增 `hfsplus.efi` 支持 U 盘安装  
-  - ✅ AMD Radeon Pro W6600M 显卡定制优化  
-  - ✅ 黑果小兵 USB 驱动集成  
-  - ✅ IOSkywalkFamily.kext 更新至 1.2.0（兼容 Sonoma/Sequoia）  
+- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
+- **更新内容摘要**：
+  - ✅ OpenCore 1.0.8 MOD 核心更新
+  - ✅ 全量 Kext 同步最新稳定版本
+  - ✅ 针对 macOS 26.3 的 ACPI / 引导参数调整
+  - ✅ 网络与音频相关驱动稳定性增强
+  - ✅ USB 映射与电源管理持续优化
 
 ---
 
 ## ⚙️ 硬件配置  
-| 组件          | 型号                          | 说明                                                                 |
-|---------------|-------------------------------|----------------------------------------------------------------------|
-| **CPU**       | Intel® Core™ i5-13600T (13th Gen) | 支持 12-14 代桌面处理器，最高 100W 性能释放                                |
-| **显卡**      | AMD Radeon RX 6600M           | 黑苹果专用定制版，支持 HDMI/DP 输出及 H.264/HEVC 硬件解码加速                   |
-| **存储**      | KIOXIA EXCERIA PRO/SE SSD     | 双 NVMe 插槽，最高 4TB 容量，开启 TRIM 优化性能                              |
-| **内存**      | DDR5 5600MHz                  | 支持单面海力士颗粒超频，提供 OverClock 选项                                 |
-| **网卡**      | Realtek® RTL8125B Gigabit LAN  | 有线网络高速稳定                                                      |
-| **无线网卡**  | BCM94352Z (BT4.2)             | 支持 Wi-Fi 6E/蓝牙 5.3                                                |
+| 组件 | 型号 | 说明 |
+|------|------|------|
+| **CPU** | Intel® Core™ i5-13600T | 支持 12–14 代处理器，功耗与性能平衡 |
+| **显卡** | AMD Radeon RX 6600M | HDMI / DP 输出，H.264 / HEVC 硬解 |
+| **存储** | NVMe SSD | 支持 TRIM，系统运行稳定 |
+| **内存** | DDR5 5600MHz | 兼容主流 DDR5 模组 |
+| **有线网卡** | Realtek RTL8125B | 千兆有线网络稳定驱动 |
+| **无线网卡** | BCM94352Z | Wi-Fi / 蓝牙功能完整 |
 
 ---
 
-## 🛠️ BIOS 指南  (默认即可)
-1. **基础配置**：  
-   - 关闭 Secure Boot 与 CFG Lock  
-   - 内存频率设为 **Intel 规范模式**  
-   - AC/DC Loadline 数值调整为 `110/110` 以提升稳定性  
-
-2. **BIOS 下载**：  
-   [点击获取最新 BIOS](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/tag/BIOS)    
-
----
-
-## 📸 功能实测验证  
-![OpenCore 主题](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/OC%E4%B8%BB%E9%A2%98.jpeg)  
+## 📸 功能实测验证
 
 ### 核心功能状态  
-| 功能模块       | 状态 | 说明                                                                 |
-|----------------|------|----------------------------------------------------------------------|
-| CPU 变频       | ✅    | 工作正常，iMacPro1,1 机型性能提升 30%                                |
-| 显卡解码       | ✅    | H.264/HEVC 硬件加速正常，独显 AAPL 参数优化                            |
-| USB 3.0/2.0    | ✅    | 全端口定制，兼容 10Gbps 接口                                         |
-| 睡眠唤醒       | ✅    | macOS 休眠与唤醒功能正常                                            |
-| 网络功能       | ✅    | 有线/无线网络、AirDrop、HandOff 均正常                              |
-| 多媒体         | ✅    | 3.5mm 声音输出、系统音频正常                                         |
+| 功能模块 | 状态 | 说明 |
+|---------|------|------|
+| CPU 变频 | ✅ | 变频与功耗管理正常 |
+| 显卡加速 | ✅ | 硬件解码与显示输出正常 |
+| USB | ✅ | 全端口定制 |
+| 睡眠唤醒 | ✅ | 睡眠 / 唤醒稳定 |
+| 有线网络 | ✅ | RTL8125B 正常工作 |
+| 无线网络 | ✅ | Wi-Fi / 蓝牙 / 连续互通 |
+| 声音 | ✅ | 声卡完整驱动，音量控制正常 |
 
 ---
 
----
-
-## 📝 高级配置  
-1. **Verbose 模式**：  
-  - 修改 `config.plist` → `NVRAM → Add → 7C436110-AB2A-4BBB-A880-FE41995C9F82` → `boot-args: -v`
-2. **启动策略**：  
-  - `ScanPolicy=0` 支持 Windows/Linux 引导
+## 📝 高级配置
+- `ScanPolicy=0` 支持多系统引导  
+- 可按需开启 `-v` Verbose 调试模式
 
 ---
 
