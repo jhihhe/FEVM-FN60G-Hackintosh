@@ -34,7 +34,7 @@
 ## 📜 更新日志
 **核心组件升级**  
 ![OpenCore](https://img.shields.io/badge/OpenCore-1.0.8_MOD-9cf?style=flat-square)  
-![Kexts](https://img.shields.io/badge/Kexts-2025 🔍 🔍.03_Latest-4BC51D?style=flat-square)
+![Kexts](https://img.shields.io/badge/Kexts-2025 .03_Latest-4BC51D?style=flat-square)
 
 - ✅ 正式支持 macOS Sequoia 26.3
 - ✅ 有线网卡 / 无线网卡 / 声卡全部实现稳定驱动
