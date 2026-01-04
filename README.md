@@ -11,7 +11,6 @@
   <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
 </div>
 
-![关于本机](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
 ![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 ---
@@ -48,6 +47,9 @@
 ## 📌 项目概述  
 本项目是专为 **FEVM-FN60G（Intel 13 / 14 代 + AMD RX 6600M）** 打造的 **OpenCore EFI 解决方案**，  
 面向 **macOS Tahoe 26.3**，在保证系统稳定性的前提下，实现硬件完整驱动与日常可用性：
+
+![关于本机](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
+
 
 - macOS Tahoe 26.3 原生级运行体验  
 - CPU 变频加速（iMacPro1,1 机型，性能与稳定性平衡）  
