@@ -1,3 +1,13 @@
+<!-- readme-visuals:header:start -->
+<p align="center"><img src="readme-assets/banner.svg" alt="FEVM FN60G — Hardware configuration and setup documentation" width="100%"></p>
+
+<p align="center">
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/commits/main"><img src="https://img.shields.io/github/last-commit/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="Last commit"></a>
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers"><img src="https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="GitHub stars"></a>
+  <a href="https://github.com/jhihhe"><img src="https://img.shields.io/badge/Maintainer-%40Jhih%20he-38bdf8?style=flat-square" alt="Maintainer: @Jhih he"></a>
+</p>
+<!-- readme-visuals:header:end -->
+
 <p align="center">
   <img src="https://img.shields.io/badge/OpenCore-1.0.7_MOD-9cf?style=flat-square&logo=apple" />    
   <img src="https://img.shields.io/badge/macOS-Tahoe_26.3-success?style=flat-square&logo=apple" />    
@@ -16,6 +26,30 @@
 ![System Overview](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
 
 ---
+
+<!-- readme-visuals:overview:start -->
+
+## At a glance
+
+<table>
+<tr>
+<td width="33%"><strong>Machine configuration</strong><br><br>OpenCore configuration for FEVM-FN60G.</td>
+<td width="33%"><strong>Hardware notes</strong><br><br>CPU, graphics, networking and USB records.</td>
+<td width="33%"><strong>Downloads and checks</strong><br><br>Release links, setup notes and recorded screenshots.</td>
+</tr>
+</table>
+
+### Workflow overview
+
+```mermaid
+flowchart LR
+    S0["Review hardware and documentation"] --> S1
+    S1["Back up existing EFI"] --> S2
+    S2["Get configuration and replace identifiers"] --> S3
+    S3["Check boot and hardware behavior"]
+```
+
+<!-- readme-visuals:overview:end -->
 
 ## 🚀 Quick Start
 **Latest Stable EFI Download** →  
