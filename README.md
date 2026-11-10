@@ -21,6 +21,10 @@
   <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
 </div>
 
+[English README →](README-EN.md)
+
+> **无需 OCLP 根补丁：声卡、Wi-Fi 直接从 EFI 驱动。** SimpleHDA + AppleALC 负责声音，SimpleBCM 负责无线；这套日用方案不需要安装 OCLP，也不用给声卡、网卡打系统根补丁。已装旧 OCLP 补丁的机器请先看下方迁移步骤。
+
 
 ---
 

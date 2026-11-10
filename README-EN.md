@@ -22,6 +22,10 @@
   <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
 </div>
 
+[中文说明 →](README.md)
+
+> **No OCLP root patching required for audio or Wi-Fi.** SimpleHDA + AppleALC handle audio and SimpleBCM handles Wi-Fi directly from EFI. This daily setup does not require installing OCLP or patching the system volume for these devices. If old OCLP patches are already installed, follow the migration instructions below.
+
 
 ---
 
