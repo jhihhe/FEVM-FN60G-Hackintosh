@@ -1,0 +1,6 @@
+.DS_Store
+._*
+*.zip
+opencore-*.txt
+nvram.plist
+*.log

@@ -1,146 +1,48 @@
-<!-- readme-visuals:header:start -->
-<p align="center"><img src="readme-assets/banner.svg" alt="FEVM FN60G — Hardware configuration and setup documentation" width="100%"></p>
+# FEVM FN60G Hackintosh
 
-<p align="center">
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/commits/main"><img src="https://img.shields.io/github/last-commit/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="Last commit"></a>
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers"><img src="https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="GitHub stars"></a>
-  <a href="https://github.com/jhihhe"><img src="https://img.shields.io/badge/Maintainer-%40Jhih%20he-38bdf8?style=flat-square" alt="Maintainer: @Jhih he"></a>
-</p>
-<!-- readme-visuals:header:end -->
+[English](README-EN.md) · [下载最新发行版](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/latest)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-1.0.7_MOD-9cf?style=flat-square&logo=apple" />    
-  <img src="https://img.shields.io/badge/macOS-Tahoe_26.3-success?style=flat-square&logo=apple" />    
-  <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
-  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />    
-</p>
+这是我自己在用的 FN60G 日用 EFI。现在回到一份配置：**RX 6600M 负责画面输出和显卡加速，SimpleBCM 管无线网卡，SimpleHDA 配合 AppleALC 管声音。** 不再折腾 UHD 770，也不再提供核显测试配置。
 
-<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>  
-<div align="center">
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜    
-  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>    
-</div>
+2026-11-10，机主反馈这份日用 EFI 已完成完整回归，可以正常使用。这个结论针对下面这台机器；公开包额外做了脱敏和无效监控驱动清理，发布前通过静态检查，尚未用公开包重新启动验证。
 
-![系统概览](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/raw/main/%E7%B3%BB%E7%BB%9F%E6%8A%A5%E5%91%8A.png)
+## 这次用的机器
 
----
+| 项目 | 配置 |
+| --- | --- |
+| 机器 | FEVM FN60G |
+| CPU | Intel Core i5-13600T |
+| 显卡 | AMD Radeon RX 6600M，沿用可用的 W6600 名称注入 |
+| 无线 | Broadcom，PCI ID 14e4:43a0 |
+| 有线 | Realtek RTL8125 |
+| 系统 | macOS 26.7.1，构建号 25G313 |
+| SMBIOS | MacPro7,1 |
+| 引导 | OpenCore MOD（BTWISE），保留现有可用二进制；版本字符串未标明具体版本号 |
 
-<!-- readme-visuals:overview:start -->
+这份配置含本机的 USB 定制和 6600M 属性、功耗表。别把它当成所有 FN60G、所有 12–14 代 CPU 或所有 AMD 显卡的通用包。系统里的 W6600 名称是注入显示名，实际硬件仍是 6600M。
 
-## 项目速览
+## 怎么用
 
-<table>
-<tr>
-<td width="33%"><strong>机型配置</strong><br><br>面向 FEVM-FN60G 的 OpenCore 方案。</td>
-<td width="33%"><strong>硬件说明</strong><br><br>CPU、显卡、网络与 USB 配置记录。</td>
-<td width="33%"><strong>下载与核对</strong><br><br>发行入口、配置提醒及实测截图。</td>
-</tr>
-</table>
+1. 先备份现有 EFI，准备一个能启动的备用 U 盘。下载发行版 ZIP，解压后使用其中的 `EFI` 文件夹。
+2. **先填自己的机器信息。** 在 `EFI/OC/config.plist → PlatformInfo → Generic` 中填写自己生成的 `SystemSerialNumber`、`MLB`、`SystemUUID` 和 `ROM`。公开包前三项为空，ROM 为六字节零；不要直接拿这个模板登录 Apple 服务，也不要照抄别人的四码。
+3. 保持 `MacPro7,1` 机型，先从 U 盘试启动，再替换硬盘 ESP 里的 EFI。已有 Windows 的机器只更新 `BOOT` 和 `OC`，保留自己的 `Microsoft` 目录。
+4. 有 Python 3 时可运行 `python3 tools/verify_efi.py` 检查文件引用。填好四码后运行 `python3 tools/verify_efi.py --personalized`；脚本只校验结构，不验证 Apple 服务资格。
+5. 第一次启动后自行检查声音、无线、有线、显示输出、USB、睡眠唤醒和常用应用，再决定是否长期使用。
 
-### 流程概览
+## 从 OCLP 根补丁迁移
 
-```mermaid
-flowchart LR
-    S0["核对硬件与文档"] --> S1
-    S1["备份原 EFI"] --> S2
-    S2["获取配置并替换三码"] --> S3
-    S3["按硬件检查启动与功能"]
-```
+当前声卡和无线方案从 EFI 加载，不需要继续保留对应的 OCLP Wi-Fi / AppleHDA 根补丁。已经正常迁移的机器不用重复操作。
 
-<!-- readme-visuals:overview:end -->
+如果系统还装着旧补丁，先备份系统和 EFI，保留原来的 OCLP 版本与恢复网络的办法；用 OCLP 查看实际补丁状态，再撤销旧的声卡、无线根补丁并按其提示重启。OCLP 的撤销可能影响整组根补丁：**还有其他必须依赖的补丁时，先确认其恢复方案**，不要把“撤销全部”当成只卸载声卡网卡。随后切换本 EFI 测试，避免新旧两套方案叠加。
 
-## 🚀 快速开始
-**最新稳定版 EFI 下载** →  
-[![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+声音沿用 `alcid=98`。显卡保留 WhateverGreen 与 `agdpmod=pikera -wegnoigpu`，不加载 WhateverXe，也不附带 Intel TGL 系统驱动。SIP 沿用原日用配置，没有在本次公开化时提高安全设置；不要把此包理解成默认安全策略。
 
-> **重要提示**  
-> 使用前请自行生成并替换以下三码：
-> - Board Serial Number  
-> - Serial Number  
-> - SmUUID  
->
-> 修改位置：
-> - `PlatformInfo → Generic`
-> - `NVRAM → RtVariables → MLB & ROM`
+## 出问题怎么退
 
----
+从备用 U 盘启动，恢复你自己备份的整份 EFI。若迁移前依赖 OCLP 根补丁，还要用原来的 OCLP 恢复对应系统补丁；仅换回 EFI 不会自动还原系统卷。如果此前装过 WhateverXe 系统驱动，请按其原安装包的卸载说明处理，单独删除 EFI 里的 kext 不等于卸载系统驱动。
 
-## 📜 更新日志
-**核心组件升级**  
-![OpenCore](https://img.shields.io/badge/OpenCore-1.0.7_MOD-9cf?style=flat-square)  
-![Kexts](https://img.shields.io/badge/Kexts-2025.03_Latest-4BC51D?style=flat-square)
+## 版本与来源
 
-- ✅ 正式支持 macOS Tahoe 26.3
-- ✅ 有线网卡 / 无线网卡 / 声卡全部实现稳定驱动
-- ✅ 核心 Kext 全面升级并针对 26.3 优化加载顺序
-- ✅ ACPI 与引导参数针对新系统版本微调
-- ✅ 提升睡眠唤醒与网络唤醒稳定性
+[更新记录](CHANGELOG.md) · [组件清单](docs/COMPONENTS.md) · [隐私说明](docs/PRIVACY.md) · [上游与许可](THIRD_PARTY.md)
 
----
-
-## 📌 项目概述  
-本项目是专为 **FEVM-FN60G（Intel 13 / 14 代 + AMD RX 6600M）** 打造的 **OpenCore EFI 解决方案**，  
-面向 **macOS Tahoe 26.3**，在保证系统稳定性的前提下，实现硬件完整驱动与日常可用性：
-
-![关于本机](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/%E5%85%B3%E4%BA%8E%E6%9C%AC%E6%9C%BA.png)
-
-
-- macOS Tahoe 26.3 原生级运行体验  
-- CPU 变频加速（iMacPro1,1 机型，性能与稳定性平衡）  
-- AMD 独显 HIDPI 与完整硬件解码  
-- 有线 / 无线网络与蓝牙连续互通功能正常  
-- 声卡完整驱动，系统音量与多应用音频输出正常  
-- Windows / Linux 多系统引导共存  
-
----
-
-## 📥 下载与更新  
-- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)  
-- **更新内容摘要**：
-  - ✅ OpenCore 1.0.7 MOD 核心更新
-  - ✅ 全量 Kext 同步最新稳定版本
-  - ✅ 针对 macOS Tahoe 26.3 的 ACPI / 引导参数调整
-  - ✅ 网络与音频相关驱动稳定性增强
-  - ✅ USB 映射与电源管理持续优化
-
----
-
-## ⚙️ 硬件配置  
-| 组件 | 型号 | 说明 |
-|------|------|------|
-| **CPU** | Intel® Core™ i5-13600T | 支持 12–14 代处理器，功耗与性能平衡 |
-| **显卡** | AMD Radeon RX 6600M | HDMI / DP 输出，H.264 / HEVC 硬解 |
-| **存储** | NVMe SSD | 支持 TRIM，系统运行稳定 |
-| **内存** | DDR5 5600MHz | 兼容主流 DDR5 模组 |
-| **有线网卡** | Realtek RTL8125B | 千兆有线网络稳定驱动 |
-| **无线网卡** | BCM94352Z | Wi-Fi / 蓝牙功能完整 |
-
----
-
-## 📸 功能实测验证
-
-### 核心功能状态  
-| 功能模块 | 状态 | 说明 |
-|---------|------|------|
-| CPU 变频 | ✅ | 变频与功耗管理正常 |
-| 显卡加速 | ✅ | 硬件解码与显示输出正常 |
-| USB | ✅ | 全端口定制 |
-| 睡眠唤醒 | ✅ | 睡眠 / 唤醒稳定 |
-| 有线网络 | ✅ | RTL8125B 正常工作 |
-| 无线网络 | ✅ | Wi-Fi / 蓝牙 / 连续互通 |
-| 声音 | ✅ | 声卡完整驱动，音量控制正常 |
-
----
-
-## 📝 高级配置
-- `ScanPolicy=0` 支持多系统引导  
-- 可按需开启 `-v` Verbose 调试模式  
-  
----
-
-## 🙏 鸣谢
-本项目的实现离不开以下开源项目和技术支持：
-- [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - 博通网卡驱动支持
-- [daliansky/FEVM-FN60G-Hackintosh](https://github.com/daliansky/FEVM-FN60G-Hackintosh) - EFI配置参考
-- [Xmingbai/FEVM-FN60G-Hackintosh](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) - 硬件兼容性方案
-- [黑果小兵部落阁](https://blog.daliansky.net/) - 安装教程与疑难解答
+维护：**@Jhih he**。保留原项目对 dailiansky、Xmingbai 及各驱动作者的感谢。仓库开放的是配置、文档和辅助脚本；第三方二进制和其中的 Apple 组件分别遵守原作者及 Apple 的条款，不会因为放进此仓库就变成 MIT 许可。
