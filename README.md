@@ -1,33 +1,136 @@
-# FEVM FN60G Hackintosh
+<!-- readme-visuals:header:start -->
+<p align="center"><img src="readme-assets/banner.svg" alt="FEVM FN60G — Hardware configuration and setup documentation" width="100%"></p>
 
-[English](README-EN.md) · [下载最新发行版](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases/latest)
+<p align="center">
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/commits/main"><img src="https://img.shields.io/github/last-commit/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="Last commit"></a>
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/stargazers"><img src="https://img.shields.io/github/stars/jhihhe/FEVM-FN60G-Hackintosh?style=flat-square&amp;color=38bdf8" alt="GitHub stars"></a>
+  <a href="https://github.com/jhihhe"><img src="https://img.shields.io/badge/Maintainer-%40Jhih%20he-38bdf8?style=flat-square" alt="Maintainer: @Jhih he"></a>
+</p>
+<!-- readme-visuals:header:end -->
 
-这是我自己在用的 FN60G 日用 EFI。现在回到一份配置：**RX 6600M 负责画面输出和显卡加速，SimpleBCM 管无线网卡，SimpleHDA 配合 AppleALC 管声音。** 不再折腾 UHD 770，也不再提供核显测试配置。
+<p align="center">
+  <img src="https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/macOS-Tahoe_26.7.1-success?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />
+</p>
 
-2026-11-10，机主反馈这份日用 EFI 已完成完整回归，可以正常使用。这个结论针对下面这台机器；公开包额外做了脱敏和无效监控驱动清理，发布前通过静态检查，尚未用公开包重新启动验证。
+<h1 align="center">FEVM-FN60G Hackintosh EFI for OpenCore</h1>
+<div align="center">
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README.md">中文</a>｜
+  <a href="https://github.com/jhihhe/FEVM-FN60G-Hackintosh/blob/main/README-EN.md">English</a>
+</div>
 
-## 这次用的机器
 
-| 项目 | 配置 |
-| --- | --- |
-| 机器 | FEVM FN60G |
-| CPU | Intel Core i5-13600T |
-| 显卡 | AMD Radeon RX 6600M，沿用可用的 W6600 名称注入 |
-| 无线 | Broadcom，PCI ID 14e4:43a0 |
-| 有线 | Realtek RTL8125 |
-| 系统 | macOS 26.7.1，构建号 25G313 |
-| SMBIOS | MacPro7,1 |
-| 引导 | OpenCore MOD（BTWISE），保留现有可用二进制；版本字符串未标明具体版本号 |
+---
 
-这份配置含本机的 USB 定制和 6600M 属性、功耗表。别把它当成所有 FN60G、所有 12–14 代 CPU 或所有 AMD 显卡的通用包。系统里的 W6600 名称是注入显示名，实际硬件仍是 6600M。
+<!-- readme-visuals:overview:start -->
 
-## 怎么用
+## 项目速览
 
-1. 先备份现有 EFI，准备一个能启动的备用 U 盘。下载发行版 ZIP，解压后使用其中的 `EFI` 文件夹。
-2. **先填自己的机器信息。** 在 `EFI/OC/config.plist → PlatformInfo → Generic` 中填写自己生成的 `SystemSerialNumber`、`MLB`、`SystemUUID` 和 `ROM`。公开包前三项为空，ROM 为六字节零；不要直接拿这个模板登录 Apple 服务，也不要照抄别人的四码。
-3. 保持 `MacPro7,1` 机型，先从 U 盘试启动，再替换硬盘 ESP 里的 EFI。已有 Windows 的机器只更新 `BOOT` 和 `OC`，保留自己的 `Microsoft` 目录。
-4. 有 Python 3 时可运行 `python3 tools/verify_efi.py` 检查文件引用。填好四码后运行 `python3 tools/verify_efi.py --personalized`；脚本只校验结构，不验证 Apple 服务资格。
-5. 第一次启动后自行检查声音、无线、有线、显示输出、USB、睡眠唤醒和常用应用，再决定是否长期使用。
+<table>
+<tr>
+<td width="33%"><strong>机型配置</strong><br><br>面向 FEVM-FN60G 的 OpenCore 方案。</td>
+<td width="33%"><strong>硬件说明</strong><br><br>CPU、显卡、网络与 USB 配置记录。</td>
+<td width="33%"><strong>下载与核对</strong><br><br>发行入口、配置提醒及实测状态。</td>
+</tr>
+</table>
+
+### 流程概览
+
+```mermaid
+flowchart LR
+    S0["核对硬件与文档"] --> S1
+    S1["备份原 EFI"] --> S2
+    S2["获取配置并填写四码"] --> S3
+    S3["按硬件检查启动与功能"]
+```
+
+<!-- readme-visuals:overview:end -->
+
+## 🚀 快速开始
+**最新稳定版 EFI 下载** →
+[![GitHub Release](https://img.shields.io/github/v/release/jhihhe/FEVM-FN60G-Hackintosh?style=for-the-badge&logo=apple)](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+
+> **重要提示**
+> 公开包已清空机器信息。使用前请自行生成并填写 `MLB`、`SystemSerialNumber`、`SystemUUID` 和 `ROM`，位置均为 `EFI/OC/config.plist → PlatformInfo → Generic`。保持 `MacPro7,1`，不要照抄别人的四码。
+>
+> 先备份原 EFI，准备可启动的备用 U 盘，从 U 盘测试后再更新硬盘 EFI。Windows 用户保留自己的 `Microsoft` 目录。
+
+---
+
+## 📜 更新日志
+**核心组件升级**
+![OpenCore](https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square)
+![Kexts](https://img.shields.io/badge/Kexts-2026.11.10-4BC51D?style=flat-square)
+
+- 这次整理成一份日用配置，6600M 负责输出，不再提供 UHD 770 / WhateverXe 测试配置。
+- 无线改用 SimpleBCM 1.2.0；声音用 SimpleHDA 1.0.1 + AppleALC，替代对应的 OCLP 根补丁。
+- 机主已确认原日用 EFI 完整回归正常，系统为 macOS 26.7.1（25G313）。
+- 公开包清空四码，去掉旧截图、本机日志及无效的 PcmMsrDriver 监控辅助驱动，清理旧 CPU 名称伪装和遗留 OCLP 变量。
+- 保留原来可用的 OpenCore MOD（BTWISE）；其内嵌版本字符串不能确认具体版本号。本次没有宣称升级引导核心。
+
+详细内容见 [更新记录](CHANGELOG.md) 和 [组件版本](docs/COMPONENTS.md)。
+
+---
+
+## 📌 项目概述
+本项目是 **FEVM-FN60G（i5-13600T + AMD RX 6600M）** 的日用 **OpenCore EFI 配置**，当前实测系统为 **macOS Tahoe 26.7.1**。
+
+- 保留现有 CPU 电源管理配置，机型使用 MacPro7,1。
+- 6600M 负责画面输出和显卡加速，沿用 WhateverGreen 和可用的显卡属性。
+- SimpleBCM 负责无线，LucyRTL8125Ethernet 负责有线网络。
+- SimpleHDA 配合 AppleALC 驱动声音，沿用 `alcid=98`。
+- 保留多系统扫描和本机 USB 定制。其他硬件批次需要自行核对，不承诺所有 12–14 代机器通用。
+
+---
+
+## 📥 下载与更新
+- **最新版本**：[点击下载](https://github.com/jhihhe/FEVM-FN60G-Hackintosh/releases)
+- **更新内容摘要**：
+  - 声卡、无线改从 EFI 加载，保留单份 `config.plist`。
+  - 保留 6600M 日用方案，去掉核显实验分支。
+  - 补齐脱敏模板、迁移与回退说明；旧提交、标签和发行版保留。
+
+---
+
+## ⚙️ 硬件配置
+| 组件 | 型号 | 说明 |
+|------|------|------|
+| **CPU** | Intel® Core™ i5-13600T | 本次实测 CPU，其他型号需自行验证 |
+| **显卡** | AMD Radeon RX 6600M | 负责输出和加速；W6600 为注入显示名 |
+| **存储** | NVMe SSD | 支持 TRIM，系统运行稳定 |
+| **内存** | DDR5 5600MHz | 沿用原硬件记录，按实际内存核对 |
+| **有线网卡** | Realtek RTL8125B | 使用 LucyRTL8125Ethernet |
+| **无线网卡** | Broadcom（14e4:43a0） | Wi-Fi 使用 SimpleBCM |
+
+---
+
+## 📸 功能实测验证
+
+### 核心功能状态
+
+机主于 2026-11-10 确认原日用 EFI 完整回归正常。下表沿用原来的功能分类，具体测试项目未单独提供记录。
+
+| 功能模块 | 状态 | 说明 |
+|---------|------|------|
+| CPU 变频 | 日用回归正常 | 保留现有配置 |
+| 显卡加速 | 日用回归正常 | 6600M 输出，已检查 Metal 加速 |
+| USB | 日用回归正常 | 保留本机 USB 定制 |
+| 睡眠唤醒 | 日用回归正常 | 以机主完整回归反馈为准 |
+| 有线网络 | 日用回归正常 | RTL8125 |
+| 无线网络 | 日用回归正常 | SimpleBCM；连续互通未提供单项测试记录 |
+| 声音 | 日用回归正常 | SimpleHDA + AppleALC |
+
+公开包脱敏及辅助驱动清理后已通过静态检查，尚未再次实机启动。旧截图不再展示，避免公开机器信息；[隐私与验证范围](docs/PRIVACY.md) 中有具体说明。
+
+---
+
+## 📝 高级配置
+- `ScanPolicy=0` 支持多系统扫描。
+- 可按需开启 `-v` 调试；显卡保留 `agdpmod=pikera -wegnoigpu`。
+- SIP 沿用日用配置，本次没有提高安全设置。
+- 可运行 `python3 tools/verify_efi.py` 检查公开模板；填好四码后加 `--personalized`，只检查结构，不验证 Apple 服务资格。
 
 ## 从 OCLP 根补丁迁移
 
@@ -41,8 +144,15 @@
 
 从备用 U 盘启动，恢复你自己备份的整份 EFI。若迁移前依赖 OCLP 根补丁，还要用原来的 OCLP 恢复对应系统补丁；仅换回 EFI 不会自动还原系统卷。如果此前装过 WhateverXe 系统驱动，请按其原安装包的卸载说明处理，单独删除 EFI 里的 kext 不等于卸载系统驱动。
 
-## 版本与来源
 
-[更新记录](CHANGELOG.md) · [组件清单](docs/COMPONENTS.md) · [隐私说明](docs/PRIVACY.md) · [上游与许可](THIRD_PARTY.md)
+---
 
-维护：**@Jhih he**。保留原项目对 dailiansky、Xmingbai 及各驱动作者的感谢。仓库开放的是配置、文档和辅助脚本；第三方二进制和其中的 Apple 组件分别遵守原作者及 Apple 的条款，不会因为放进此仓库就变成 MIT 许可。
+## 🙏 鸣谢
+本项目的实现离不开以下开源项目和技术支持：
+- [SimpleBCM](https://github.com/laobamac/SimpleBCM) / [SimpleHDA](https://github.com/laobamac/SimpleHDA) - 当前无线与音频方案
+- [OpenCore Legacy Patcher](https://github.com/dortania/OpenCore-Legacy-Patcher) - 博通网卡驱动支持
+- [daliansky/FEVM-FN60G-Hackintosh](https://github.com/daliansky/FEVM-FN60G-Hackintosh) - EFI配置参考
+- [Xmingbai/FEVM-FN60G-Hackintosh](https://github.com/Xmingbai/FEVM-FN60G-Hackintosh) - 硬件兼容性方案
+- [黑果小兵部落阁](https://blog.daliansky.net/) - 安装教程与疑难解答
+
+维护：**@Jhih he**。第一方配置、文档和脚本使用 MIT 许可；第三方驱动和 Apple 组件保留各自条款，详见 [上游与许可](THIRD_PARTY.md)。
