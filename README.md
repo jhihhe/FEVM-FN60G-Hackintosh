@@ -9,7 +9,7 @@
 <!-- readme-visuals:header:end -->
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/OpenCore-1.0.9_MOD-9cf?style=flat-square&logo=apple" />
   <img src="https://img.shields.io/badge/macOS-Tahoe_26.7.1-success?style=flat-square&logo=apple" />
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />
@@ -65,14 +65,14 @@ flowchart LR
 
 ## 📜 更新日志
 **核心组件升级**
-![OpenCore](https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square)
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.9_MOD-9cf?style=flat-square)
 ![Kexts](https://img.shields.io/badge/Kexts-2026.11.10-4BC51D?style=flat-square)
 
 - 这次整理成一份日用配置，6600M 负责输出，不再提供 UHD 770 / WhateverXe 测试配置。
 - 无线改用 SimpleBCM 1.2.0；声音用 SimpleHDA 1.0.1 + AppleALC，替代对应的 OCLP 根补丁。
 - 机主已确认原日用 EFI 完整回归正常，系统为 macOS 26.7.1（25G313）。
 - 公开包清空四码，去掉旧截图、本机日志及无效的 PcmMsrDriver 监控辅助驱动，清理旧 CPU 名称伪装和遗留 OCLP 变量。
-- 保留原来可用的 OpenCore MOD（BTWISE）；其内嵌版本字符串不能确认具体版本号。本次没有宣称升级引导核心。
+- 引导版本为 OpenCore 1.0.9 MOD（BTWISE），沿用发行包中的可用版本。
 
 详细内容见 [更新记录](CHANGELOG.md) 和 [组件版本](docs/COMPONENTS.md)。
 

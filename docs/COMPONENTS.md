@@ -1,6 +1,6 @@
 # 组件清单
 
-版本读取自本次包内 Info.plist，不表示上游最新版本。OpenCore 使用现有 BTWISE MOD，具体数值版本无法从其内嵌字符串确认。
+Kext 版本读取自本次包内 Info.plist，不表示上游最新版本。OpenCore 为 1.0.9 MOD（BTWISE），版本由机主确认。
 
 | Kext | Version |
 | --- | --- |

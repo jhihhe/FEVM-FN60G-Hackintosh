@@ -9,7 +9,7 @@
 <!-- readme-visuals:header:end -->
 
 <p align="center">
-  <img src="https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square&logo=apple" />
+  <img src="https://img.shields.io/badge/OpenCore-1.0.9_MOD-9cf?style=flat-square&logo=apple" />
   <img src="https://img.shields.io/badge/macOS-Tahoe_26.7.1-success?style=flat-square&logo=apple" />
   <img src="https://img.shields.io/badge/BIOS-FN60G_B11HF210-blue?style=flat-square" />
   <img src="https://img.shields.io/badge/Platform-Windows%20%7C%20macOS%20%7C%20Linux-green" />
@@ -66,14 +66,14 @@ flowchart LR
 
 ## 📜 Changelog
 **Core Component Updates**
-![OpenCore](https://img.shields.io/badge/OpenCore-MOD_BTWISE-9cf?style=flat-square)
+![OpenCore](https://img.shields.io/badge/OpenCore-1.0.9_MOD-9cf?style=flat-square)
 ![Kexts](https://img.shields.io/badge/Kexts-2026.11.10-4BC51D?style=flat-square)
 
 - One daily configuration: RX 6600M handles output; UHD 770 / WhateverXe experiments are removed.
 - SimpleBCM 1.2.0 handles Wi-Fi; SimpleHDA 1.0.1 and AppleALC handle audio, replacing the corresponding OCLP root patches.
 - The owner confirmed a full daily-EFI regression on macOS 26.7.1 (25G313).
 - Public packaging clears identifiers, removes old screenshots and logs, the failing PcmMsrDriver helper, old CPU-name overrides and stale OCLP variables.
-- The existing working BTWISE OpenCore MOD is retained. Its embedded string does not identify a numerical version; no bootloader upgrade is claimed.
+- The release uses OpenCore 1.0.9 MOD (BTWISE), retaining the existing working bootloader.
 
 See [changes](CHANGELOG.md) and [component versions](docs/COMPONENTS.md).
 
